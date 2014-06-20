@@ -1,7 +1,7 @@
 <?php
 
 /* CCICommunityBaseBundle:Default:index.html.twig */
-class __TwigTemplate_1df21d5912a5cc6cb892682f157c29af8c62c1d2184dd5bf292d668f123b7838 extends Twig_Template
+class __TwigTemplate_0576300d432029e770ef9390d3f90f98c127140fc83a647b8b24eab631677c8b extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {

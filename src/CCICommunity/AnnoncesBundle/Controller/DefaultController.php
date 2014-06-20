@@ -6,14 +6,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function evenementAction()
+    public function indexEvenement()
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array());
     }
     
-    /* A revoir
-    public function evenementAction(id)
+    // A revoir
+    /*public function detailEvenement($id)
     {
-        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array(id));
+        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array());
     }*/
 }

@@ -1,7 +1,7 @@
 <?php
 
 /* ::layout.html.twig */
-class __TwigTemplate_81ed2262a74a347070003cfe5e72ac4ae9f170f5c7fbe8da3aec1dffe18c62cc extends Twig_Template
+class __TwigTemplate_f515abadf23acb936b91e4520be5142107e82cce4d1cc2bb0b1675839f9f2634 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {

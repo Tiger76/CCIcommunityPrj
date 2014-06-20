@@ -27,14 +27,62 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $context = $this->context;
         $request = $this->request;
 
-        // cci_community_annonces_homepage
-        if (0 === strpos($pathinfo, '/annonces/hello') && preg_match('#^/annonces/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_annonces_homepage')), array (  '_controller' => 'CCICommunity\\AnnoncesBundle\\Controller\\DefaultController::indexAction',));
+        if (0 === strpos($pathinfo, '/annonces')) {
+            if (0 === strpos($pathinfo, '/annonces/petitesannonces')) {
+                // cci_community_annonces_petitesannonces_detail
+                if (preg_match('#^/annonces/petitesannonces/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_annonces_petitesannonces_detail')), array (  '_controller' => 'CCICommunity\\AnnoncesBundle\\Controller\\DefaultController::petitesannonces_detailAction',));
+                }
+
+                // cci_community_annonces_petitesannonces_list
+                if ($pathinfo === '/annonces/petitesannonces') {
+                    return array (  '_controller' => 'CCICommunity\\AnnoncesBundle\\Controller\\DefaultController::petitesannonces_listAction',  '_route' => 'cci_community_annonces_petitesannonces_list',);
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/annonces/evenements')) {
+                // cci_community_annonces_evenements_detail
+                if (preg_match('#^/annonces/evenements/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_annonces_evenements_detail')), array (  '_controller' => 'CCICommunity\\AnnoncesBundle\\Controller\\DefaultController::evenements_detailAction',));
+                }
+
+                // cci_community_annonces_evenements_list
+                if ($pathinfo === '/annonces/evenements') {
+                    return array (  '_controller' => 'CCICommunity\\AnnoncesBundle\\Controller\\DefaultController::evenements_listAction',  '_route' => 'cci_community_annonces_evenements_list',);
+                }
+
+            }
+
         }
 
-        // cci_community_conseil_homepage
-        if (0 === strpos($pathinfo, '/conseil/hello') && preg_match('#^/conseil/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_conseil_homepage')), array (  '_controller' => 'CCICommunity\\ConseilBundle\\Controller\\DefaultController::indexAction',));
+        if (0 === strpos($pathinfo, '/conseil')) {
+            if (0 === strpos($pathinfo, '/conseil/adresses')) {
+                // cci_community_conseil_adresses_detail
+                if (preg_match('#^/conseil/adresses/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_conseil_adresses_detail')), array (  '_controller' => 'CCICommunityConseileBundle:Default:adresses_detail',));
+                }
+
+                // cci_community_conseil_adresses_list
+                if ($pathinfo === '/conseil/adresses') {
+                    return array (  '_controller' => 'CCICommunity\\ConseilBundle\\Controller\\DefaultController::adresses_listAction',  '_route' => 'cci_community_conseil_adresses_list',);
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/conseil/liensutiles')) {
+                // cci_community_conseil_liensutiles_detail
+                if (preg_match('#^/conseil/liensutiles/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_conseil_liensutiles_detail')), array (  '_controller' => 'CCICommunityConseileBundle:Default:liensutiles_detail',));
+                }
+
+                // cci_community_conseil_liensutiles_list
+                if ($pathinfo === '/conseil/liensutiles') {
+                    return array (  '_controller' => 'CCICommunity\\ConseilBundle\\Controller\\DefaultController::liensutiles_listAction',  '_route' => 'cci_community_conseil_liensutiles_list',);
+                }
+
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/vdc')) {
