@@ -18,7 +18,6 @@ cci_community_base_inscription:
     pattern:  /inscription
     defaults: { _controller: CCICommunityBaseBundle:Default:inscription }
 
-
 cci_community_base_homepage:
     pattern:  /
     defaults: { _controller: CCICommunityBaseBundle:Default:index }

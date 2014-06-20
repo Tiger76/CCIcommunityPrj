@@ -1,3 +1,15 @@
-cci_community_conseil_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: CCICommunityConseilBundle:Default:index }
+cci_community_conseil_adresses_detail:
+    pattern:  /adresses/{id}
+    defaults: { _controller: CCICommunityConseileBundle:Default:adresses_detail }
+
+cci_community_conseil_adresses_list:
+    pattern:  /adresses
+    defaults: { _controller: CCICommunityConseilBundle:Default:adresses_list }
+    
+cci_community_conseil_liensutiles_detail:
+    pattern:  /liensutiles/{id}
+    defaults: { _controller: CCICommunityConseileBundle:Default:liensutiles_detail }
+
+cci_community_conseil_liensutiles_list:
+    pattern:  /liensutiles
+    defaults: { _controller: CCICommunityConseilBundle:Default:liensutiles_list }

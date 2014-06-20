@@ -1,3 +1,15 @@
-cci_community_annonces_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: CCICommunityAnnoncesBundle:Default:index }
+cci_community_annonces_petitesannonces_detail:
+    pattern:  /petitesannonces/{id}
+    defaults: { _controller: CCICommunityAnnoncesBundle:Default:petitesannonces_detail }
+
+cci_community_annonces_petitesannonces_list:
+    pattern:  /petitesannonces
+    defaults: { _controller: CCICommunityAnnoncesBundle:Default:petitesannonces_list }
+    
+cci_community_annonces_evenements_detail:
+    pattern:  /evenements/{id}
+    defaults: { _controller: CCICommunityAnnoncesBundle:Default:evenements_detail }
+
+cci_community_annonces_evenements_list:
+    pattern:  /evenements
+    defaults: { _controller: CCICommunityAnnoncesBundle:Default:evenements_list }
