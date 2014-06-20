@@ -1,0 +1,71 @@
+﻿Suppression des fichiers de cache et de log
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$email.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$formation.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$id.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$image.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$motDePasse.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$nom.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$prenom.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2$pseudo.cache.php
+#	deleted:    app/cache/prod/annotations/0d0d418a4b6dad945a899510eef68b24b198ecc2.cache.php
+#	deleted:    app/cache/prod/annotations/11abfa50b383d3f176bae448c32fea62f6c0b47b$id.cache.php
+#	deleted:    app/cache/prod/annotations/11abfa50b383d3f176bae448c32fea62f6c0b47b$texte.cache.php
+#	deleted:    app/cache/prod/annotations/11abfa50b383d3f176bae448c32fea62f6c0b47b$titre.cache.php
+#	deleted:    app/cache/prod/annotations/11abfa50b383d3f176bae448c32fea62f6c0b47b$url.cache.php
+#	deleted:    app/cache/prod/annotations/11abfa50b383d3f176bae448c32fea62f6c0b47b.cache.php
+#	deleted:    app/cache/prod/annotations/16ac369c75d57dad5736e62085db0fc682abc8a5.cache.php
+#	deleted:    app/cache/prod/annotations/2886d175200b480720bc1446c7bb24017a3cf229.cache.php
+#	deleted:    app/cache/prod/annotations/2bb015a97b84fd72ad9811344de14c8dc072be78$auteur.cache.php
+#	deleted:    app/cache/prod/annotations/2bb015a97b84fd72ad9811344de14c8dc072be78$date.cache.php
+#	deleted:    app/cache/prod/annotations/2bb015a97b84fd72ad9811344de14c8dc072be78$id.cache.php
+#	deleted:    app/cache/prod/annotations/2bb015a97b84fd72ad9811344de14c8dc072be78$image.cache.php
+#	deleted:    app/cache/prod/annotations/2bb015a97b84fd72ad9811344de14c8dc072be78$texte.cache.php
+#	deleted:    app/cache/prod/annotations/2bb015a97b84fd72ad9811344de14c8dc072be78$titre.cache.php
+#	deleted:    app/cache/prod/annotations/2bb015a97b84fd72ad9811344de14c8dc072be78.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$adresse.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$auteur.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$date.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$id.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$image.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$note.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$texte.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3$titre.cache.php
+#	deleted:    app/cache/prod/annotations/495825c41933955517086f4f3ea9ab5a399ef6e3.cache.php
+#	deleted:    app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628#showAction.cache.php
+#	deleted:    app/cache/prod/annotations/597877fc1359850fa8786ead82dcc8f6f491d628.cache.php
+#	deleted:    app/cache/prod/annotations/7c43417de450c0e9cb72de0271544397c87af61e.cache.php
+#	deleted:    app/cache/prod/annotations/a3863e9ca12fde383bfa9b9114193ebc63aeae16.cache.php
+#	deleted:    app/cache/prod/annotations/a6a589f95cf634fd7acddb747fc5980263790952#indexAction.cache.php
+#	deleted:    app/cache/prod/annotations/a6a589f95cf634fd7acddb747fc5980263790952.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38$adresse.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38$auteur.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38$date.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38$id.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38$image.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38$texte.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38$titre.cache.php
+#	deleted:    app/cache/prod/annotations/acfcab7b2bb9acb0c73488bb353540f2877a8e38.cache.php
+#	deleted:    app/cache/prod/annotations/d302256c088ad5f589b47af15ed4deb689215a9d.cache.php
+#	deleted:    app/cache/prod/appProdProjectContainer.php
+#	deleted:    app/cache/prod/appProdUrlMatcher.php
+#	deleted:    app/cache/prod/classes.map
+#	deleted:    app/cache/prod/classes.php
+#	deleted:    app/cache/prod/doctrine/orm/Proxies/__CG__CCICommunityAnnoncesBundleEntityEvenement.php
+#	deleted:    app/cache/prod/doctrine/orm/Proxies/__CG__CCICommunityBaseBundleEntityUtilisateur.php
+#	deleted:    app/cache/prod/doctrine/orm/Proxies/__CG__CCICommunityBaseBundleEntityVDC.php
+#	deleted:    app/cache/prod/doctrine/orm/Proxies/__CG__CCICommunityConseilBundleEntityAdresses.php
+#	deleted:    app/cache/prod/doctrine/orm/Proxies/__CG__CCICommunityConseilBundleEntityLiensUtiles.php
+#	deleted:    app/cache/prod/twig/05/76/300d432029e770ef9390d3f90f98c127140fc83a647b8b24eab631677c8b.php
+#	deleted:    app/cache/prod/twig/25/3a/bac50953f96cf0828ac8db7adbd72186a14083b5f7d6830fd2870b8d63cd.php
+#	deleted:    app/cache/prod/twig/f5/15/abadf23acb936b91e4520be5142107e82cce4d1cc2bb0b1675839f9f2634.php
+#
+
