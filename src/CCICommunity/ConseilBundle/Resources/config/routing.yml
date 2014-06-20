@@ -1,0 +1,3 @@
+cci_community_conseil_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: CCICommunityConseilBundle:Default:index }

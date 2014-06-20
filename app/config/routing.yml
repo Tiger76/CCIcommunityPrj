@@ -1,0 +1,12 @@
+cci_community_annonces:
+    resource: "@CCICommunityAnnoncesBundle/Resources/config/routing.yml"
+    prefix:   /annonces
+
+cci_community_conseil:
+    resource: "@CCICommunityConseilBundle/Resources/config/routing.yml"
+    prefix:   /conseil
+
+cci_community_base:
+    resource: "@CCICommunityBaseBundle/Resources/config/routing.yml"
+    prefix:   /
+

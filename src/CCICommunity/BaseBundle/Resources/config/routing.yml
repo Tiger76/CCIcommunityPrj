@@ -1,0 +1,24 @@
+cci_community_base_vdc_detail:
+    pattern:  /vdc/{id}
+    defaults: { _controller: CCICommunityBaseBundle:Default:vdc_detail }
+
+cci_community_base_vdc_list:
+    pattern:  /vdc
+    defaults: { _controller: CCICommunityBaseBundle:Default:vdc_list }
+    
+cci_community_base_login:
+    pattern:  /login
+    defaults: { _controller: CCICommunityBaseBundle:Default:login }
+    
+cci_community_base_logout:
+    pattern:  /logout
+    defaults: { _controller: CCICommunityBaseBundle:Default:logout }
+    
+cci_community_base_inscription:
+    pattern:  /inscription
+    defaults: { _controller: CCICommunityBaseBundle:Default:inscription }
+
+
+cci_community_base_homepage:
+    pattern:  /
+    defaults: { _controller: CCICommunityBaseBundle:Default:index }
