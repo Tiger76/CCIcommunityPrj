@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAdresses()
+    public function adresses_listAction()
     {
         return $this->render('CCICommunityConseilBundle:Default:adresses_list.html.twig', array());
     }
@@ -17,7 +17,7 @@ class DefaultController extends Controller
         return $this->render('CCICommunityConseilBundle:Default:adresses_detail.html.twig', array());
     }*/
     
-    public function indexLiensutiles()
+    public function liensutiles_listAction()
     {
         return $this->render('CCICommunityConseilBundle:Default:liensutiles_list.html.twig', array());
     }

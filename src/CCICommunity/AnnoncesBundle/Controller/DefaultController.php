@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexEvenement()
+    public function evenements_listAction()
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array());
     }

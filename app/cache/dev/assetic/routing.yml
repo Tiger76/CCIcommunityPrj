@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/config/routing_dev.yml'

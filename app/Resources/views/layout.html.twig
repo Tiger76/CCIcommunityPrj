@@ -12,11 +12,11 @@
 	<link type="text/css" rel="stylesheet" href="{{asset("bundles/ccicommunitybase/css/color-button.css")}}">
 	<!-- js Boots_from -->
 	<script src="{{asset("bundles/ccicommunitybase/js/jquery.js")}}"></script>
-    <script src="{{asset("bundles/ccicommunitybase/js/bootstrap.min.js")}}"></script>
-    <script src="{{asset("bundles/ccicommunitybase/js/custom.js")}}"></script>
+        <script src="{{asset("bundles/ccicommunitybase/js/bootstrap.min.js")}}"></script>
+        <script src="{{asset("bundles/ccicommunitybase/js/custom.js")}}"></script>
 	<!-- end Boots_from -->
-        
     </head>
+    
     <body>
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
@@ -26,11 +26,11 @@
                     </a>
                     <div class="nav-collapse">
                         <ul class="nav pull-right">
-                            <li><a href="index.html">Accueil</a></li>
-                            <li><a href="liste_evenement.html">Evenements</a></li>
-                            <li><a href="vdc.html">Vie de classe</a></li>
-                            <li><a href="liste_adresse.html">Adresses</a></li>
-                            <li><a href="liens_utiles.html">Liens utiles</a></li>
+                            <li><a href="{{path('cci_community_base_homepage')}}">Accueil</a></li>
+                            <li><a href="{{path('cci_community_annonces_evenements_list')}}">Evenements</a></li>
+                            <li><a href="{{path('cci_community_base_vdc_list')}}">Vie de classe</a></li>
+                            <li><a href="{{path('cci_community_conseil_adresses_list')}}">Adresses</a></li>
+                            <li><a href="{{path('cci_community_conseil_liensutiles_list')}}">Liens utiles</a></li>}}
 
                             <li class="divider-vertical"></li>
 
