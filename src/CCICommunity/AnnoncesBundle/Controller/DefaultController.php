@@ -12,8 +12,18 @@ class DefaultController extends Controller
     }
     
     // A revoir
-    /*public function detailEvenement($id)
+    public function evenements_detailAction($id)
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array());
+    }
+
+    /*public function petitesannonces_listAction()
+    {
+        return $this->render('CCICommunityAnnoncesBundle:Default:petitesannonces_list.html.twig', array());
+    }
+
+    public function petitesannonces_detailAction($id)
+    {
+        return $this->render('CCICommunityAnnoncesBundle:Default:petitesannonces_detail.html.twig', array());
     }*/
 }
