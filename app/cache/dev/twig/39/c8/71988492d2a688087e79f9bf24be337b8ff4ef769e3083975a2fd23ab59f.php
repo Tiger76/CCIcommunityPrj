@@ -35,7 +35,10 @@ class __TwigTemplate_39c871988492d2a688087e79f9bf24be337b8ff4ef769e3083975a2fd23
                     <div class=\"widget\">
                         <div class=\"widget-content\">
                             <div class=\"title\">
-                                <h3><a href=\"./detail_adresse.html\">Le Maque-Do</a></h3>
+                                <h3><a href=\"";
+        // line 11
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("cci_community_conseil_adresses_detail", array("id" => (isset($context["id"]) ? $context["id"] : $this->getContext($context, "id")))), "html", null, true);
+        echo "\">Le Maque-Do</a></h3>
                                 <div class=\"desc\">
                                     Posted by: <a href=\"#\">jane doe</a> | Posted on: 
                                     <strong>April 6th, 2011</strong> | 
@@ -95,6 +98,6 @@ class __TwigTemplate_39c871988492d2a688087e79f9bf24be337b8ff4ef769e3083975a2fd23
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,);
+        return array (  40 => 11,  31 => 4,  28 => 3,);
     }
 }

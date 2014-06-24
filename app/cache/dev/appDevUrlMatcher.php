@@ -168,7 +168,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             if (0 === strpos($pathinfo, '/conseil/adresses')) {
                 // cci_community_conseil_adresses_detail
                 if (preg_match('#^/conseil/adresses/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_conseil_adresses_detail')), array (  '_controller' => 'CCICommunityConseileBundle:Default:adresses_detail',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_conseil_adresses_detail')), array (  '_controller' => 'CCICommunity\\ConseilBundle\\Controller\\DefaultController::adresses_detailAction',));
                 }
 
                 // cci_community_conseil_adresses_list
@@ -181,7 +181,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             if (0 === strpos($pathinfo, '/conseil/liensutiles')) {
                 // cci_community_conseil_liensutiles_detail
                 if (preg_match('#^/conseil/liensutiles/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_conseil_liensutiles_detail')), array (  '_controller' => 'CCICommunityConseileBundle:Default:liensutiles_detail',));
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'cci_community_conseil_liensutiles_detail')), array (  '_controller' => 'CCICommunity\\ConseilBundle\\Controller\\DefaultController::liensutiles_detailAction',));
                 }
 
                 // cci_community_conseil_liensutiles_list
