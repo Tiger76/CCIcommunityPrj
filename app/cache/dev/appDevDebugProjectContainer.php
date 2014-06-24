@@ -34,7 +34,10 @@ class appDevDebugProjectContainer extends Container
         $this->scopes = array('request' => 'container');
         $this->scopeChildren = array('request' => array());
         $this->methodMap = array(
-            '1712e44eee2c0d70c3069b71d56e282a7ca97764610d8068f9f6fe7df64686ba_1' => 'get1712e44eee2c0d70c3069b71d56e282a7ca97764610d8068f9f6fe7df64686ba1Service',
+            '36cf3ad4cfaf40ce1fa9d6f7fd1177ab1cd2720d56539246ad1f114c06df0a8b_1' => 'get36cf3ad4cfaf40ce1fa9d6f7fd1177ab1cd2720d56539246ad1f114c06df0a8b1Service',
+            '5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_1' => 'get5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a1Service',
+            '5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_2' => 'get5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a2Service',
+            '5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_3' => 'get5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a3Service',
             'annotation_reader' => 'getAnnotationReaderService',
             'assetic.asset_factory' => 'getAssetic_AssetFactoryService',
             'assetic.asset_manager' => 'getAssetic_AssetManagerService',
@@ -47,9 +50,6 @@ class appDevDebugProjectContainer extends Container
             'cache_clearer' => 'getCacheClearerService',
             'cache_warmer' => 'getCacheWarmerService',
             'controller_name_converter' => 'getControllerNameConverterService',
-            'd452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_1' => 'getD452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb1Service',
-            'd452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_2' => 'getD452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb2Service',
-            'd452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_3' => 'getD452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb3Service',
             'data_collector.form' => 'getDataCollector_FormService',
             'data_collector.form.extractor' => 'getDataCollector_Form_ExtractorService',
             'data_collector.request' => 'getDataCollector_RequestService',
@@ -266,16 +266,55 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
-     * Gets the '1712e44eee2c0d70c3069b71d56e282a7ca97764610d8068f9f6fe7df64686ba_1' service.
+     * Gets the '36cf3ad4cfaf40ce1fa9d6f7fd1177ab1cd2720d56539246ad1f114c06df0a8b_1' service.
      *
      * This service is shared.
      * This method always returns the same instance of the service.
      *
      * @return Symfony\Component\Form\ResolvedFormTypeFactory A Symfony\Component\Form\ResolvedFormTypeFactory instance.
      */
-    protected function get1712e44eee2c0d70c3069b71d56e282a7ca97764610d8068f9f6fe7df64686ba1Service()
+    protected function get36cf3ad4cfaf40ce1fa9d6f7fd1177ab1cd2720d56539246ad1f114c06df0a8b1Service()
     {
-        return $this->services['1712e44eee2c0d70c3069b71d56e282a7ca97764610d8068f9f6fe7df64686ba_1'] = new \Symfony\Component\Form\ResolvedFormTypeFactory();
+        return $this->services['36cf3ad4cfaf40ce1fa9d6f7fd1177ab1cd2720d56539246ad1f114c06df0a8b_1'] = new \Symfony\Component\Form\ResolvedFormTypeFactory();
+    }
+
+    /**
+     * Gets the '5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_1' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Swift_Transport_Esmtp_Auth_CramMd5Authenticator A Swift_Transport_Esmtp_Auth_CramMd5Authenticator instance.
+     */
+    protected function get5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a1Service()
+    {
+        return $this->services['5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_1'] = new \Swift_Transport_Esmtp_Auth_CramMd5Authenticator();
+    }
+
+    /**
+     * Gets the '5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_2' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Swift_Transport_Esmtp_Auth_LoginAuthenticator A Swift_Transport_Esmtp_Auth_LoginAuthenticator instance.
+     */
+    protected function get5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a2Service()
+    {
+        return $this->services['5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_2'] = new \Swift_Transport_Esmtp_Auth_LoginAuthenticator();
+    }
+
+    /**
+     * Gets the '5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_3' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Swift_Transport_Esmtp_Auth_PlainAuthenticator A Swift_Transport_Esmtp_Auth_PlainAuthenticator instance.
+     */
+    protected function get5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a3Service()
+    {
+        return $this->services['5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_3'] = new \Swift_Transport_Esmtp_Auth_PlainAuthenticator();
     }
 
     /**
@@ -288,7 +327,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getAnnotationReaderService()
     {
-        return $this->services['annotation_reader'] = new \Doctrine\Common\Annotations\FileCacheReader(new \Doctrine\Common\Annotations\AnnotationReader(), 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/annotations', true);
+        return $this->services['annotation_reader'] = new \Doctrine\Common\Annotations\FileCacheReader(new \Doctrine\Common\Annotations\AnnotationReader(), '/var/www/CCIcommunityPrj/app/cache/dev/annotations', true);
     }
 
     /**
@@ -301,9 +340,9 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getAssetic_AssetManagerService()
     {
-        $this->services['assetic.asset_manager'] = $instance = new \Assetic\Factory\LazyAssetManager($this->get('assetic.asset_factory'), array('twig' => new \Assetic\Factory\Loader\CachedFormulaLoader(new \Assetic\Extension\Twig\TwigFormulaLoader($this->get('twig')), new \Assetic\Cache\ConfigCache('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/assetic/config'), true)));
+        $this->services['assetic.asset_manager'] = $instance = new \Assetic\Factory\LazyAssetManager($this->get('assetic.asset_factory'), array('twig' => new \Assetic\Factory\Loader\CachedFormulaLoader(new \Assetic\Extension\Twig\TwigFormulaLoader($this->get('twig')), new \Assetic\Cache\ConfigCache('/var/www/CCIcommunityPrj/app/cache/dev/assetic/config'), true)));
 
-        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($this->get('templating.loader'), '', 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/Resources/views', '/\\.[^.]+\\.twig$/'), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($this->get('templating.loader'), '', '/var/www/CCIcommunityPrj/app/Resources/views', '/\\.[^.]+\\.twig$/'), 'twig');
 
         return $instance;
     }
@@ -389,48 +428,9 @@ class appDevDebugProjectContainer extends Container
         $a = $this->get('kernel');
         $b = $this->get('templating.filename_parser');
 
-        $c = new \Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder($a, $b, 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/Resources');
+        $c = new \Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder($a, $b, '/var/www/CCIcommunityPrj/app/Resources');
 
         return $this->services['cache_warmer'] = new \Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate(array(0 => new \Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplatePathsCacheWarmer($c, $this->get('templating.locator')), 1 => new \Symfony\Bundle\AsseticBundle\CacheWarmer\AssetManagerCacheWarmer($this), 2 => new \Symfony\Bundle\FrameworkBundle\CacheWarmer\RouterCacheWarmer($this->get('router')), 3 => new \Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheCacheWarmer($this, $c), 4 => new \Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer($this->get('doctrine'))));
-    }
-
-    /**
-     * Gets the 'd452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_1' service.
-     *
-     * This service is shared.
-     * This method always returns the same instance of the service.
-     *
-     * @return Swift_Transport_Esmtp_Auth_CramMd5Authenticator A Swift_Transport_Esmtp_Auth_CramMd5Authenticator instance.
-     */
-    protected function getD452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb1Service()
-    {
-        return $this->services['d452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_1'] = new \Swift_Transport_Esmtp_Auth_CramMd5Authenticator();
-    }
-
-    /**
-     * Gets the 'd452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_2' service.
-     *
-     * This service is shared.
-     * This method always returns the same instance of the service.
-     *
-     * @return Swift_Transport_Esmtp_Auth_LoginAuthenticator A Swift_Transport_Esmtp_Auth_LoginAuthenticator instance.
-     */
-    protected function getD452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb2Service()
-    {
-        return $this->services['d452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_2'] = new \Swift_Transport_Esmtp_Auth_LoginAuthenticator();
-    }
-
-    /**
-     * Gets the 'd452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_3' service.
-     *
-     * This service is shared.
-     * This method always returns the same instance of the service.
-     *
-     * @return Swift_Transport_Esmtp_Auth_PlainAuthenticator A Swift_Transport_Esmtp_Auth_PlainAuthenticator instance.
-     */
-    protected function getD452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb3Service()
-    {
-        return $this->services['d452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_3'] = new \Swift_Transport_Esmtp_Auth_PlainAuthenticator();
     }
 
     /**
@@ -681,15 +681,15 @@ class appDevDebugProjectContainer extends Container
         $a = $this->get('annotation_reader');
 
         $b = new \Doctrine\Common\Cache\ArrayCache();
-        $b->setNamespace('sf2orm_default_935d8d17715b30fc0eb48c2be7b7b9e30d3168da592f9371bf21a191774d394c');
+        $b->setNamespace('sf2orm_default_a20764c52190ab141c91ad185c29e9fa83d218d5562f5270f40936d7dae1ccb4');
 
         $c = new \Doctrine\Common\Cache\ArrayCache();
-        $c->setNamespace('sf2orm_default_935d8d17715b30fc0eb48c2be7b7b9e30d3168da592f9371bf21a191774d394c');
+        $c->setNamespace('sf2orm_default_a20764c52190ab141c91ad185c29e9fa83d218d5562f5270f40936d7dae1ccb4');
 
         $d = new \Doctrine\Common\Cache\ArrayCache();
-        $d->setNamespace('sf2orm_default_935d8d17715b30fc0eb48c2be7b7b9e30d3168da592f9371bf21a191774d394c');
+        $d->setNamespace('sf2orm_default_a20764c52190ab141c91ad185c29e9fa83d218d5562f5270f40936d7dae1ccb4');
 
-        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => 'D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\src\\CCICommunity\\BaseBundle\\Entity', 1 => 'D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\src\\CCICommunity\\ConseilBundle\\Entity', 2 => 'D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\src\\CCICommunity\\AnnoncesBundle\\Entity'));
+        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => '/var/www/CCIcommunityPrj/src/CCICommunity/BaseBundle/Entity', 1 => '/var/www/CCIcommunityPrj/src/CCICommunity/ConseilBundle/Entity', 2 => '/var/www/CCIcommunityPrj/src/CCICommunity/AnnoncesBundle/Entity'));
 
         $f = new \Doctrine\ORM\Mapping\Driver\DriverChain();
         $f->addDriver($e, 'CCICommunity\\BaseBundle\\Entity');
@@ -702,7 +702,7 @@ class appDevDebugProjectContainer extends Container
         $g->setQueryCacheImpl($c);
         $g->setResultCacheImpl($d);
         $g->setMetadataDriverImpl($f);
-        $g->setProxyDir('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/doctrine/orm/Proxies');
+        $g->setProxyDir('/var/www/CCIcommunityPrj/app/cache/dev/doctrine/orm/Proxies');
         $g->setProxyNamespace('Proxies');
         $g->setAutoGenerateProxyClasses(true);
         $g->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -765,7 +765,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getFileLocatorService()
     {
-        return $this->services['file_locator'] = new \Symfony\Component\HttpKernel\Config\FileLocator($this->get('kernel'), 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/Resources');
+        return $this->services['file_locator'] = new \Symfony\Component\HttpKernel\Config\FileLocator($this->get('kernel'), '/var/www/CCIcommunityPrj/app/Resources');
     }
 
     /**
@@ -830,7 +830,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getForm_ResolvedTypeFactoryService()
     {
-        return $this->services['form.resolved_type_factory'] = new \Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeFactoryDataCollectorProxy($this->get('1712e44eee2c0d70c3069b71d56e282a7ca97764610d8068f9f6fe7df64686ba_1'), $this->get('data_collector.form'));
+        return $this->services['form.resolved_type_factory'] = new \Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeFactoryDataCollectorProxy($this->get('36cf3ad4cfaf40ce1fa9d6f7fd1177ab1cd2720d56539246ad1f114c06df0a8b_1'), $this->get('data_collector.form'));
     }
 
     /**
@@ -1517,7 +1517,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getMonolog_Handler_MainService()
     {
-        return $this->services['monolog.handler.main'] = new \Monolog\Handler\StreamHandler('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/logs/dev.log', 100, true);
+        return $this->services['monolog.handler.main'] = new \Monolog\Handler\StreamHandler('/var/www/CCIcommunityPrj/app/logs/dev.log', 100, true);
     }
 
     /**
@@ -1731,7 +1731,7 @@ class appDevDebugProjectContainer extends Container
         $d = new \Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector($this->get('doctrine'));
         $d->addLogger('default', $this->get('doctrine.dbal.logger.profiling.default'));
 
-        $this->services['profiler'] = $instance = new \Symfony\Component\HttpKernel\Profiler\Profiler(new \Symfony\Component\HttpKernel\Profiler\FileProfilerStorage('file:D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/profiler', '', '', 86400), $a);
+        $this->services['profiler'] = $instance = new \Symfony\Component\HttpKernel\Profiler\Profiler(new \Symfony\Component\HttpKernel\Profiler\FileProfilerStorage('file:/var/www/CCIcommunityPrj/app/cache/dev/profiler', '', '', 86400), $a);
 
         $instance->add($c);
         $instance->add($this->get('data_collector.request'));
@@ -1829,7 +1829,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getRouterService()
     {
-        return $this->services['router'] = new \Symfony\Bundle\FrameworkBundle\Routing\Router($this, 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/assetic/routing.yml', array('cache_dir' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev', 'debug' => true, 'generator_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_base_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_dumper_class' => 'Symfony\\Component\\Routing\\Generator\\Dumper\\PhpGeneratorDumper', 'generator_cache_class' => 'appDevUrlGenerator', 'matcher_class' => 'Symfony\\Bundle\\FrameworkBundle\\Routing\\RedirectableUrlMatcher', 'matcher_base_class' => 'Symfony\\Bundle\\FrameworkBundle\\Routing\\RedirectableUrlMatcher', 'matcher_dumper_class' => 'Symfony\\Component\\Routing\\Matcher\\Dumper\\PhpMatcherDumper', 'matcher_cache_class' => 'appDevUrlMatcher', 'strict_requirements' => true), $this->get('router.request_context', ContainerInterface::NULL_ON_INVALID_REFERENCE), $this->get('monolog.logger.router', ContainerInterface::NULL_ON_INVALID_REFERENCE));
+        return $this->services['router'] = new \Symfony\Bundle\FrameworkBundle\Routing\Router($this, '/var/www/CCIcommunityPrj/app/cache/dev/assetic/routing.yml', array('cache_dir' => '/var/www/CCIcommunityPrj/app/cache/dev', 'debug' => true, 'generator_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_base_class' => 'Symfony\\Component\\Routing\\Generator\\UrlGenerator', 'generator_dumper_class' => 'Symfony\\Component\\Routing\\Generator\\Dumper\\PhpGeneratorDumper', 'generator_cache_class' => 'appDevUrlGenerator', 'matcher_class' => 'Symfony\\Bundle\\FrameworkBundle\\Routing\\RedirectableUrlMatcher', 'matcher_base_class' => 'Symfony\\Bundle\\FrameworkBundle\\Routing\\RedirectableUrlMatcher', 'matcher_dumper_class' => 'Symfony\\Component\\Routing\\Matcher\\Dumper\\PhpMatcherDumper', 'matcher_cache_class' => 'appDevUrlMatcher', 'strict_requirements' => true), $this->get('router.request_context', ContainerInterface::NULL_ON_INVALID_REFERENCE), $this->get('monolog.logger.router', ContainerInterface::NULL_ON_INVALID_REFERENCE));
     }
 
     /**
@@ -2003,7 +2003,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_SecureRandomService()
     {
-        return $this->services['security.secure_random'] = new \Symfony\Component\Security\Core\Util\SecureRandom('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/secure_random.seed', $this->get('monolog.logger.security', ContainerInterface::NULL_ON_INVALID_REFERENCE));
+        return $this->services['security.secure_random'] = new \Symfony\Component\Security\Core\Util\SecureRandom('/var/www/CCIcommunityPrj/app/cache/dev/secure_random.seed', $this->get('monolog.logger.security', ContainerInterface::NULL_ON_INVALID_REFERENCE));
     }
 
     /**
@@ -2029,7 +2029,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSensioDistribution_WebconfiguratorService()
     {
-        return $this->services['sensio_distribution.webconfigurator'] = new \Sensio\Bundle\DistributionBundle\Configurator\Configurator('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app');
+        return $this->services['sensio_distribution.webconfigurator'] = new \Sensio\Bundle\DistributionBundle\Configurator\Configurator('/var/www/CCIcommunityPrj/app');
     }
 
     /**
@@ -2190,7 +2190,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSession_Storage_FilesystemService()
     {
-        return $this->services['session.storage.filesystem'] = new \Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/sessions', 'MOCKSESSID', $this->get('session.storage.metadata_bag'));
+        return $this->services['session.storage.filesystem'] = new \Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage('/var/www/CCIcommunityPrj/app/cache/dev/sessions', 'MOCKSESSID', $this->get('session.storage.metadata_bag'));
     }
 
     /**
@@ -2324,7 +2324,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSwiftmailer_Mailer_Default_Transport_RealService()
     {
-        $a = new \Swift_Transport_Esmtp_AuthHandler(array(0 => $this->get('d452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_1'), 1 => $this->get('d452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_2'), 2 => $this->get('d452f26978b0c0368ff1ffb4e29c596b8b70138f385d721144e8ab250a7b0ddb_3')));
+        $a = new \Swift_Transport_Esmtp_AuthHandler(array(0 => $this->get('5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_1'), 1 => $this->get('5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_2'), 2 => $this->get('5f07d8cc34b98ed6f613e449599b4ef971535bc37e17d36f9a29d7c9ce81941a_3')));
         $a->setUsername(NULL);
         $a->setPassword(NULL);
         $a->setAuthMode(NULL);
@@ -2438,7 +2438,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTemplating_Helper_CodeService()
     {
-        return $this->services['templating.helper.code'] = new \Symfony\Bundle\FrameworkBundle\Templating\Helper\CodeHelper(NULL, 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app', 'UTF-8');
+        return $this->services['templating.helper.code'] = new \Symfony\Bundle\FrameworkBundle\Templating\Helper\CodeHelper(NULL, '/var/www/CCIcommunityPrj/app', 'UTF-8');
     }
 
     /**
@@ -2971,7 +2971,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTranslator_DefaultService()
     {
-        return $this->services['translator.default'] = new \Symfony\Bundle\FrameworkBundle\Translation\Translator($this, $this->get('translator.selector'), array('translation.loader.php' => array(0 => 'php'), 'translation.loader.yml' => array(0 => 'yml'), 'translation.loader.xliff' => array(0 => 'xlf', 1 => 'xliff'), 'translation.loader.po' => array(0 => 'po'), 'translation.loader.mo' => array(0 => 'mo'), 'translation.loader.qt' => array(0 => 'ts'), 'translation.loader.csv' => array(0 => 'csv'), 'translation.loader.res' => array(0 => 'res'), 'translation.loader.dat' => array(0 => 'dat'), 'translation.loader.ini' => array(0 => 'ini'), 'translation.loader.json' => array(0 => 'json')), array('cache_dir' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/translations', 'debug' => true));
+        return $this->services['translator.default'] = new \Symfony\Bundle\FrameworkBundle\Translation\Translator($this, $this->get('translator.selector'), array('translation.loader.php' => array(0 => 'php'), 'translation.loader.yml' => array(0 => 'yml'), 'translation.loader.xliff' => array(0 => 'xlf', 1 => 'xliff'), 'translation.loader.po' => array(0 => 'po'), 'translation.loader.mo' => array(0 => 'mo'), 'translation.loader.qt' => array(0 => 'ts'), 'translation.loader.csv' => array(0 => 'csv'), 'translation.loader.res' => array(0 => 'res'), 'translation.loader.dat' => array(0 => 'dat'), 'translation.loader.ini' => array(0 => 'ini'), 'translation.loader.json' => array(0 => 'json')), array('cache_dir' => '/var/www/CCIcommunityPrj/app/cache/dev/translations', 'debug' => true));
     }
 
     /**
@@ -2984,14 +2984,14 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTwigService()
     {
-        $this->services['twig'] = $instance = new \Twig_Environment($this->get('twig.loader'), array('debug' => true, 'strict_variables' => true, 'exception_controller' => 'twig.controller.exception:showAction', 'autoescape_service' => NULL, 'autoescape_service_method' => NULL, 'cache' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/twig', 'charset' => 'UTF-8', 'paths' => array()));
+        $this->services['twig'] = $instance = new \Twig_Environment($this->get('twig.loader'), array('debug' => true, 'strict_variables' => true, 'exception_controller' => 'twig.controller.exception:showAction', 'autoescape_service' => NULL, 'autoescape_service_method' => NULL, 'cache' => '/var/www/CCIcommunityPrj/app/cache/dev/twig', 'charset' => 'UTF-8', 'paths' => array()));
 
         $instance->addExtension(new \Symfony\Bundle\SecurityBundle\Twig\Extension\LogoutUrlExtension($this->get('templating.helper.logout_url')));
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\SecurityExtension($this->get('security.context', ContainerInterface::NULL_ON_INVALID_REFERENCE)));
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\TranslationExtension($this->get('translator')));
         $instance->addExtension(new \Symfony\Bundle\TwigBundle\Extension\AssetsExtension($this, $this->get('router.request_context')));
         $instance->addExtension(new \Symfony\Bundle\TwigBundle\Extension\ActionsExtension($this));
-        $instance->addExtension(new \Symfony\Bridge\Twig\Extension\CodeExtension(NULL, 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app', 'UTF-8'));
+        $instance->addExtension(new \Symfony\Bridge\Twig\Extension\CodeExtension(NULL, '/var/www/CCIcommunityPrj/app', 'UTF-8'));
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\RoutingExtension($this->get('router')));
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\YamlExtension());
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\StopwatchExtension($this->get('debug.stopwatch', ContainerInterface::NULL_ON_INVALID_REFERENCE)));
@@ -3045,18 +3045,18 @@ class appDevDebugProjectContainer extends Container
     {
         $this->services['twig.loader'] = $instance = new \Symfony\Bundle\TwigBundle\Loader\FilesystemLoader($this->get('templating.locator'), $this->get('templating.name_parser'));
 
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\FrameworkBundle/Resources/views', 'Framework');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\SecurityBundle/Resources/views', 'Security');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\TwigBundle/Resources/views', 'Twig');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\symfony\\swiftmailer-bundle\\Symfony\\Bundle\\SwiftmailerBundle/Resources/views', 'Swiftmailer');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\doctrine\\doctrine-bundle\\Doctrine\\Bundle\\DoctrineBundle/Resources/views', 'Doctrine');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\src\\CCICommunity\\BaseBundle/Resources/views', 'CCICommunityBase');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\src\\CCICommunity\\ConseilBundle/Resources/views', 'CCICommunityConseil');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\src\\CCICommunity\\AnnoncesBundle/Resources/views', 'CCICommunityAnnonces');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views', 'WebProfiler');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\sensio\\distribution-bundle\\Sensio\\Bundle\\DistributionBundle/Resources/views', 'SensioDistribution');
-        $instance->addPath('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/Resources/views');
-        $instance->addPath('D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\symfony\\symfony\\src\\Symfony\\Bridge\\Twig/Resources/views/Form');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views', 'Framework');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views', 'Security');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views', 'Twig');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/symfony/swiftmailer-bundle/Symfony/Bundle/SwiftmailerBundle/Resources/views', 'Swiftmailer');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/doctrine/doctrine-bundle/Doctrine/Bundle/DoctrineBundle/Resources/views', 'Doctrine');
+        $instance->addPath('/var/www/CCIcommunityPrj/src/CCICommunity/BaseBundle/Resources/views', 'CCICommunityBase');
+        $instance->addPath('/var/www/CCIcommunityPrj/src/CCICommunity/ConseilBundle/Resources/views', 'CCICommunityConseil');
+        $instance->addPath('/var/www/CCIcommunityPrj/src/CCICommunity/AnnoncesBundle/Resources/views', 'CCICommunityAnnonces');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', 'WebProfiler');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views', 'SensioDistribution');
+        $instance->addPath('/var/www/CCIcommunityPrj/app/Resources/views');
+        $instance->addPath('/var/www/CCIcommunityPrj/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form');
 
         return $instance;
     }
@@ -3115,7 +3115,7 @@ class appDevDebugProjectContainer extends Container
         $instance->setConstraintValidatorFactory(new \Symfony\Bundle\FrameworkBundle\Validator\ConstraintValidatorFactory($this, array('validator.expression' => 'validator.expression', 'Symfony\\Component\\Validator\\Constraints\\EmailValidator' => 'validator.email', 'security.validator.user_password' => 'security.validator.user_password', 'doctrine.orm.validator.unique' => 'doctrine.orm.validator.unique')));
         $instance->setTranslator($this->get('translator'));
         $instance->setTranslationDomain('validators');
-        $instance->addXmlMappings(array(0 => 'D:\\EasyPHP\\data\\localweb\\projects\\CCIcommunityPrj\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form/Resources/config/validation.xml'));
+        $instance->addXmlMappings(array(0 => '/var/www/CCIcommunityPrj/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml'));
         $instance->enableAnnotationMapping($this->get('annotation_reader'));
         $instance->addMethodMapping('loadClassMetadata');
         $instance->addObjectInitializers(array(0 => $this->get('doctrine.orm.validator_initializer')));
@@ -3215,7 +3215,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getAssetic_AssetFactoryService()
     {
-        $this->services['assetic.asset_factory'] = $instance = new \Symfony\Bundle\AsseticBundle\Factory\AssetFactory($this->get('kernel'), $this, $this->getParameterBag(), 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/../web', true);
+        $this->services['assetic.asset_factory'] = $instance = new \Symfony\Bundle\AsseticBundle\Factory\AssetFactory($this->get('kernel'), $this, $this->getParameterBag(), '/var/www/CCIcommunityPrj/app/../web', true);
 
         $instance->addWorker(new \Symfony\Bundle\AsseticBundle\Factory\Worker\UseControllerWorker());
 
@@ -3236,7 +3236,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getAssetic_CacheService()
     {
-        return $this->services['assetic.cache'] = new \Assetic\Cache\FilesystemCache('D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/assetic/assets');
+        return $this->services['assetic.cache'] = new \Assetic\Cache\FilesystemCache('/var/www/CCIcommunityPrj/app/cache/dev/assetic/assets');
     }
 
     /**
@@ -3452,7 +3452,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getTemplating_LocatorService()
     {
-        return $this->services['templating.locator'] = new \Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator($this->get('file_locator'), 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev');
+        return $this->services['templating.locator'] = new \Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator($this->get('file_locator'), '/var/www/CCIcommunityPrj/app/cache/dev');
     }
 
     /**
@@ -3523,12 +3523,12 @@ class appDevDebugProjectContainer extends Container
     protected function getDefaultParameters()
     {
         return array(
-            'kernel.root_dir' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app',
+            'kernel.root_dir' => '/var/www/CCIcommunityPrj/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
             'kernel.name' => 'app',
-            'kernel.cache_dir' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev',
-            'kernel.logs_dir' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/logs',
+            'kernel.cache_dir' => '/var/www/CCIcommunityPrj/app/cache/dev',
+            'kernel.logs_dir' => '/var/www/CCIcommunityPrj/app/logs',
             'kernel.bundles' => array(
                 'FrameworkBundle' => 'Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle',
                 'SecurityBundle' => 'Symfony\\Bundle\\SecurityBundle\\SecurityBundle',
@@ -3613,7 +3613,7 @@ class appDevDebugProjectContainer extends Container
             'debug.errors_logger_listener.class' => 'Symfony\\Component\\HttpKernel\\EventListener\\ErrorsLoggerListener',
             'debug.event_dispatcher.class' => 'Symfony\\Component\\HttpKernel\\Debug\\TraceableEventDispatcher',
             'debug.stopwatch.class' => 'Symfony\\Component\\Stopwatch\\Stopwatch',
-            'debug.container.dump' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/appDevDebugProjectContainer.xml',
+            'debug.container.dump' => '/var/www/CCIcommunityPrj/app/cache/dev/appDevDebugProjectContainer.xml',
             'debug.controller_resolver.class' => 'Symfony\\Component\\HttpKernel\\Controller\\TraceableControllerResolver',
             'debug.debug_handlers_listener.class' => 'Symfony\\Component\\HttpKernel\\EventListener\\DebugHandlersListener',
             'kernel.secret' => 'ThisTokenIsNotSoSecretChangeIt',
@@ -3639,7 +3639,7 @@ class appDevDebugProjectContainer extends Container
             'session.storage.options' => array(
                 'gc_probability' => 1,
             ),
-            'session.save_path' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/sessions',
+            'session.save_path' => '/var/www/CCIcommunityPrj/app/cache/dev/sessions',
             'session.metadata.update_threshold' => '0',
             'security.secure_random.class' => 'Symfony\\Component\\Security\\Core\\Util\\SecureRandom',
             'form.resolved_type_factory.class' => 'Symfony\\Component\\Form\\ResolvedFormTypeFactory',
@@ -3714,7 +3714,7 @@ class appDevDebugProjectContainer extends Container
             'data_collector.form.extractor.class' => 'Symfony\\Component\\Form\\Extension\\DataCollector\\FormDataExtractor',
             'profiler_listener.only_exceptions' => false,
             'profiler_listener.only_master_requests' => false,
-            'profiler.storage.dsn' => 'file:D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/profiler',
+            'profiler.storage.dsn' => 'file:/var/www/CCIcommunityPrj/app/cache/dev/profiler',
             'profiler.storage.username' => '',
             'profiler.storage.password' => '',
             'profiler.storage.lifetime' => 86400,
@@ -3738,7 +3738,7 @@ class appDevDebugProjectContainer extends Container
             'router.request_context.host' => 'localhost',
             'router.request_context.scheme' => 'http',
             'router.request_context.base_url' => '',
-            'router.resource' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/assetic/routing.yml',
+            'router.resource' => '/var/www/CCIcommunityPrj/app/cache/dev/assetic/routing.yml',
             'router.cache_class_prefix' => 'appDev',
             'request_listener.http_port' => 80,
             'request_listener.https_port' => 443,
@@ -3859,7 +3859,7 @@ class appDevDebugProjectContainer extends Container
                 'exception_controller' => 'twig.controller.exception:showAction',
                 'autoescape_service' => NULL,
                 'autoescape_service_method' => NULL,
-                'cache' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/twig',
+                'cache' => '/var/www/CCIcommunityPrj/app/cache/dev/twig',
                 'charset' => 'UTF-8',
                 'paths' => array(
 
@@ -3926,7 +3926,7 @@ class appDevDebugProjectContainer extends Container
             'swiftmailer.mailer.default.transport.smtp.auth_mode' => NULL,
             'swiftmailer.mailer.default.transport.smtp.timeout' => 30,
             'swiftmailer.mailer.default.transport.smtp.source_ip' => NULL,
-            'swiftmailer.spool.default.memory.path' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/swiftmailer/spool/default',
+            'swiftmailer.spool.default.memory.path' => '/var/www/CCIcommunityPrj/app/cache/dev/swiftmailer/spool/default',
             'swiftmailer.mailer.default.spool.enabled' => true,
             'swiftmailer.mailer.default.plugin.impersonate' => NULL,
             'swiftmailer.mailer.default.single_address' => NULL,
@@ -3952,7 +3952,7 @@ class appDevDebugProjectContainer extends Container
             'assetic.node.paths' => array(
 
             ),
-            'assetic.cache_dir' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/assetic',
+            'assetic.cache_dir' => '/var/www/CCIcommunityPrj/app/cache/dev/assetic',
             'assetic.bundles' => array(
 
             ),
@@ -3964,12 +3964,12 @@ class appDevDebugProjectContainer extends Container
             'assetic.debug' => true,
             'assetic.use_controller' => true,
             'assetic.enable_profiler' => false,
-            'assetic.read_from' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/../web',
-            'assetic.write_to' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/../web',
+            'assetic.read_from' => '/var/www/CCIcommunityPrj/app/../web',
+            'assetic.write_to' => '/var/www/CCIcommunityPrj/app/../web',
             'assetic.variables' => array(
 
             ),
-            'assetic.java.bin' => 'C:\\Windows\\system32\\java.EXE',
+            'assetic.java.bin' => '/usr/bin/java',
             'assetic.node.bin' => '/usr/bin/node',
             'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
@@ -4038,7 +4038,7 @@ class appDevDebugProjectContainer extends Container
             'doctrine.orm.naming_strategy.default.class' => 'Doctrine\\ORM\\Mapping\\DefaultNamingStrategy',
             'doctrine.orm.naming_strategy.underscore.class' => 'Doctrine\\ORM\\Mapping\\UnderscoreNamingStrategy',
             'doctrine.orm.auto_generate_proxy_classes' => true,
-            'doctrine.orm.proxy_dir' => 'D:/EasyPHP/data/localweb/projects/CCIcommunityPrj/app/cache/dev/doctrine/orm/Proxies',
+            'doctrine.orm.proxy_dir' => '/var/www/CCIcommunityPrj/app/cache/dev/doctrine/orm/Proxies',
             'doctrine.orm.proxy_namespace' => 'Proxies',
             'sensio_framework_extra.view.guesser.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\Templating\\TemplateGuesser',
             'sensio_framework_extra.controller.listener.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\ControllerListener',
