@@ -181,4 +181,33 @@ class VDC
     {
         return $this->date;
     }
+    
+    /**
+      * @ORM\ManyToOne(targetEntity="CCICommunity\BaseBundle\Entity\Promo", inversedBy="vdcs")
+    * @ORM\JoinColumn(nullable=false)
+    */
+    private $promo;
+    
+     /**
+     * Set promo
+     *
+     * @param string $promo
+     * @return Promo
+     */
+    public function setPromo($promo)
+    {
+        $this->promo = $promo;
+
+        return $this;
+    }
+
+    /**
+     * Get promo
+     *
+     * @return string 
+     */
+    public function getPromo()
+    {
+        return $this->promo;
+    }
 }

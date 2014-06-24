@@ -75,17 +75,12 @@ class Utilisateur
     * @ORM\JoinColumn(nullable=false)
     */
     private $promo;
-
-    /* Dans l'Entité Promo à faire : 
-
-     /**
-    * * @ORM\OneToMany(targetEntity="CCICommunity\BaseBundle\Entity\Utilisateur", mappedBy="promo")
+    
+    /**
+    * * @ORM\OneToOne(targetEntity="CCICommunity\BaseBundle\Entity\Utilisateur", mappedBy="admin")
     
     */
-        //private $utilisateurs;
-    
-
-    
+        private $promochef;
 
 
     /**
@@ -257,5 +252,51 @@ class Utilisateur
     public function getImage()
     {
         return $this->image;
+    }
+    
+    /**
+     * Set promo
+     *
+     * @param string $promo
+     * @return Utilisateur
+     */
+    public function setPromo($promo)
+    {
+        $this->promo = $promo;
+
+        return $this;
+    }
+
+    /**
+     * Get promo
+     *
+     * @return promo
+     */
+    public function getPromo()
+    {
+        return $this->promo;
+    }
+    
+    /**
+     * Set promo
+     *
+     * @param string $promochef
+     * @return Utilisateur
+     */
+    public function setPromoChef($promochef)
+    {
+        $this->promochef = $promochef;
+
+        return $this;
+    }
+
+    /**
+     * Get promo
+     *
+     * @return promo
+     */
+    public function getPromochef()
+    {
+        return $this->promochef;
     }
 }
