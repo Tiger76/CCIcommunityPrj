@@ -70,6 +70,18 @@ class Utilisateur
      */
     private $image;
 
+     /**
+      * @ORM\ManyToOne(targetEntity="CCICommunity\BaseBundle\Entity\Promo", inversedBy="utilisateurs")
+    * @ORM\JoinColumn(nullable=false)
+    */
+    private $promo;
+    
+    /**
+    * * @ORM\OneToOne(targetEntity="CCICommunity\BaseBundle\Entity\Utilisateur", mappedBy="admin")
+    
+    */
+        private $promochef;
+
 
     /**
      * Get id
@@ -240,5 +252,51 @@ class Utilisateur
     public function getImage()
     {
         return $this->image;
+    }
+    
+    /**
+     * Set promo
+     *
+     * @param string $promo
+     * @return Utilisateur
+     */
+    public function setPromo($promo)
+    {
+        $this->promo = $promo;
+
+        return $this;
+    }
+
+    /**
+     * Get promo
+     *
+     * @return promo
+     */
+    public function getPromo()
+    {
+        return $this->promo;
+    }
+    
+    /**
+     * Set promo
+     *
+     * @param string $promochef
+     * @return Utilisateur
+     */
+    public function setPromoChef($promochef)
+    {
+        $this->promochef = $promochef;
+
+        return $this;
+    }
+
+    /**
+     * Get promo
+     *
+     * @return promo
+     */
+    public function getPromochef()
+    {
+        return $this->promochef;
     }
 }
