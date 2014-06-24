@@ -8,12 +8,13 @@ class DefaultController extends Controller
 {
     public function evenements_listAction()
     {
-        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array());
+        $id = 1;
+        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('id' => $id ));
     }
     
     // A revoir
-    /*public function detailEvenement($id)
+    public function evenements_detailAction($id)
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array());
-    }*/
+    }
 }

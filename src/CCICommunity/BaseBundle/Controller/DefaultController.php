@@ -13,6 +13,6 @@ class DefaultController extends Controller
     
     public function vdc_listAction()
     {
-        return $this->render('CCICommunityBaseBundle:Default:index.html.twig', array());
+        return $this->render('CCICommunityBaseBundle:Default:vdc.html.twig', array());
     }
 }
