@@ -17,6 +17,7 @@ class DefaultController extends Controller
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array());
     }
+    
     /*public function petitesannonces_listAction()
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:petitesannonces_list.html.twig', array());
