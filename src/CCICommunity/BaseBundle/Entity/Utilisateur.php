@@ -70,6 +70,23 @@ class Utilisateur
      */
     private $image;
 
+     /**
+      * @ORM\ManyToOne(targetEntity="CCICommunity\BaseBundle\Entity\Promo", inversedBy="utilisateurs")
+    * @ORM\JoinColumn(nullable=false)
+    */
+    private $promo;
+
+    /* Dans l'Entité Promo à faire : 
+
+     /**
+    * * @ORM\OneToMany(targetEntity="CCICommunity\BaseBundle\Entity\Utilisateur", mappedBy="promo")
+    
+    */
+        //private $utilisateurs;
+    
+
+    
+
 
     /**
      * Get id
