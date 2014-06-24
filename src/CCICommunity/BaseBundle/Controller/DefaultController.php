@@ -15,4 +15,9 @@ class DefaultController extends Controller
     {
         return $this->render('CCICommunityBaseBundle:Default:vdc.html.twig', array());
     }
+    
+    public function form_redactionAction($type)
+    {
+        return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array('type' => $type ));
+    }
 }

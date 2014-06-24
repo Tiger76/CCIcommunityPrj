@@ -634,6 +634,10 @@ border-bottom-color: #999;
 	width:670px;
 	min-height:200px;
 }
+
+.component{
+    padding-left:1%;
+}
 /*
 #widget-grid .span1,#widget-grid .span2,#widget-grid .span3,#widget-grid .span4,#widget-grid .span5,#widget-grid .span6,#widget-grid .span7,#widget-grid .span8,#widget-grid .span9,#widget-grid .span10,#widget-grid .span11,#widget-grid .span12
 {
@@ -941,7 +945,6 @@ code {
 .plan-container {
 	* margin:0px 0.4%;
 }
-
 
 
 
