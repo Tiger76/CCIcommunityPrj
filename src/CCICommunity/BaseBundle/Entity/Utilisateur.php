@@ -77,7 +77,8 @@ class Utilisateur
     private $promo;
     
     /**
-    * * @ORM\OneToOne(targetEntity="CCICommunity\BaseBundle\Entity\Utilisateur", mappedBy="admin")
+    * * @ORM\OneToOne(targetEntity="CCICommunity\BaseBundle\Entity\Promo", mappedBy="admin")
+     *
     
     */
         private $promochef;
