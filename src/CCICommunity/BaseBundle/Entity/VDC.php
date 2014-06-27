@@ -142,9 +142,9 @@ class VDC
      * @param string $typeAuteur
      * @return VDC
      */
-    public function setAuteur($typeAuteur)
+    public function setAuteur($newAuteur)
     {
-        $this->typeAuteur = $typeAuteur;
+        $this->typeAuteur = $newAuteur;
 
         return $this;
     }
@@ -154,9 +154,9 @@ class VDC
      *
      * @return string 
      */
-    public function getTypeAuteur()
+    public function getAuteur()
     {
-        return $this->typeAuteur;
+        return $this->auteur;
     }
 
     /**

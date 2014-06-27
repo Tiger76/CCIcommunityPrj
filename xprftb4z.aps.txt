@@ -1,0 +1,14 @@
+﻿Merge
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# rebase in progress; onto da3bdb9
+# You are currently rebasing branch 'master' on 'da3bdb9'.
+#   (all conflicts fixed: run "git rebase --continue")
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   app/logs/prod.log
+#	modified:   src/CCICommunity/BaseBundle/Entity/Utilisateur.php
+#
+

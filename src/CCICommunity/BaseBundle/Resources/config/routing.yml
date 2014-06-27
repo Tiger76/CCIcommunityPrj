@@ -6,9 +6,9 @@ cci_community_base_vdc_list:
     pattern:  /vdc
     defaults: { _controller: CCICommunityBaseBundle:Default:vdc_list }
 
-cci_community_base_form_redaction:
-    pattern:  /form_redaction/{type}
-    defaults: { _controller: CCICommunityBaseBundle:Default:form_redaction }
+cci_community_base_ajouter_vdc:
+    pattern:  /ajouter_vdc
+    defaults: { _controller: CCICommunityBaseBundle:Default:ajouter_vdc }
 
 cci_community_base_login:
     pattern:  /login

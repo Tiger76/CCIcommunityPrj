@@ -1,0 +1,17 @@
+﻿Exemple de formulaire pour VDC
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   app/config/parameters.yml
+#	modified:   app/logs/prod.log
+#	modified:   src/CCICommunity/BaseBundle/Controller/DefaultController.php
+#	modified:   src/CCICommunity/BaseBundle/Entity/VDC.php
+#	new file:   src/CCICommunity/BaseBundle/Form/VDCType.php
+#	modified:   src/CCICommunity/BaseBundle/Resources/config/routing.yml
+#	modified:   src/CCICommunity/BaseBundle/Resources/views/Default/form_redaction.html.twig
+#	new file:   xprftb4z.aps.txt
+#
+

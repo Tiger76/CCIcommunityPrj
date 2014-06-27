@@ -3,6 +3,8 @@
 namespace CCICommunity\BaseBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use CCICommunity\BaseBundle\Entity\VDC;
+use CCICommunity\BaseBundle\Form\VDCType;
 
 class DefaultController extends Controller
 {
@@ -22,8 +24,28 @@ class DefaultController extends Controller
         return $this->render('CCICommunityBaseBundle:Default:vdc_detail.html.twig', array());
     }
     
-    public function form_redactionAction($type)
+    public function ajouter_vdcAction()
     {
-        return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array('type' => $type ));
+        $vdc = new VDC;
+        $form = $this->createForm(new VDCType, $vdc);
+        
+          $request = $this->get('request');
+          if ($request->getMethod() == 'POST') {
+            $form->bind($request);
+
+            if ($form->isValid()) {
+              $em = $this->getDoctrine()->getManager();
+              $em->persist($vdc);
+              $em->flush();
+
+              return $this->redirect($this->generateUrl('cci_community_base_vdc_list'));
+            }
+          }
+
+          //return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array(
+            //'form' => $form,
+          //));
+
+        return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array('form' => $form->createView() ));
     }
 }
