@@ -1,0 +1,374 @@
+{# empty Twig template #}
+{% extends "::layout.html.twig" %}
+
+{% block contenu %}
+<div class="main">
+
+    <div class="container">
+        <div class="row">
+            <div class="box-wrapper span9">
+
+                <div class="row">
+                    <div class="box-content-widget span9">
+                        <div class="row">
+                            <div class="title bg-title span9">
+                                <p><h3>
+                                    <span class="title_torrent pull-left">Redaction d'une XXXX</span>
+                                    <span class="pull-right">05-05-2014</span>
+                                </h3></p>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <fieldset><div class="component" data-content="<form class='form'>
+                                           <div class='controls'>
+
+
+
+                                           <label class='control-label'> Form Name </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='name' id='name' value ='Rédaction d'un Element' />
+
+                                           <hr/>
+                                           <button id=&quot;save&quot; class='btn btn-info'>Save</button><button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+                                           </div>
+                                           </form>
+                                           " data-title="Form Name" data-trigger="manual" data-html="true"><!-- Form Name -->
+                                </div>
+                                <div class="component" data-content="<form class='form'>
+                                     <div class='controls'>
+
+                                     <label class='control-label'> ID / Name </label>
+                                     <input class='input-large field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='titre' />
+                                     <label class='control-label'> Label Text </label>
+                                     <input class='input-large field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='' />
+                                     <label class='control-label'> Placeholder </label>
+                                     <input class='input-large field' data-type=&quot;input&quot; type='text' name='placeholder' id='placeholder' value ='Tapez votre titre ici' />
+                                     <label class='control-label'> Help Text </label>
+                                     <input class='input-large field' data-type=&quot;input&quot; type='text' name='helptext' id='helptext' value ='' />
+                                     <label class=&quot;checkbox control-group&quot;>
+                                     <input type=&quot;checkbox&quot; data-type=&quot;checkbox&quot; class=&quot;input-inline field&quot; name=&quot;required&quot; id=&quot;required&quot;>
+                                     Required
+                                     </label>
+                                     <label class='control-label'> Input Size </label>
+                                     <select class=&quot;field&quot; data-type=&quot;select&quot; id='inputsize'>
+
+                                     <option value=&quot;input-mini&quot;  >Mini</option>
+
+                                     <option value=&quot;input-small&quot;  >Small</option>
+
+                                     <option value=&quot;input-medium&quot;  >Medium</option>
+
+                                     <option value=&quot;input-large&quot;  >Large</option>
+
+                                     <option value=&quot;input-xlarge&quot;  selected  >Xlarge</option>
+
+                                     <option value=&quot;input-xxlarge&quot;  >Xxlarge</option>
+
+                                     </select>
+
+                                     <hr/>
+                                     <button id=&quot;save&quot; class='btn btn-info'>Save</button><button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+                                     </div>
+                                     </form>
+                                     " data-title="Text Input" data-trigger="manual" data-html="true"><!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="titre"></label>
+                                        <div class="controls">
+                                            <input id="titre" name="titre" type="text" placeholder="Tapez votre titre ici" class="input-xlarge">
+
+                                        </div>
+                                    </div>
+                                </div><div class="component" data-content="<form class='form'>
+                                           <div class='controls'>
+
+                                           <label class='control-label'> ID / Name </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='contenu' />
+                                           <label class='control-label'> Label Text </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='' />
+                                           <label class='control-label'> Starting Text </label>
+                                           <textarea class=&quot;field&quot; data-type=&quot;textarea&quot; style='min-height: 200px' id='textarea'>Tapez le contenu de l'article ici</textarea>
+
+                                           <hr/>
+                                           <button id=&quot;save&quot; class='btn btn-info'>Save</button><button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+                                           </div>
+                                           </form>
+                                           " data-title="Text Area" data-trigger="manual" data-html="true"><!-- Textarea -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="contenu"></label>
+                                        <div class="controls">                     
+                                            <textarea id="contenu" name="contenu">Tapez le contenu de l'article ici</textarea>
+                                        </div>
+                                    </div>
+                                </div><div class="component" data-content="<form class='form'>
+                                           <div class='controls'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           <label class='control-label'> ID / Name </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='image' />
+                                           <label class='control-label'> Label Text </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='' />
+                                           <label class='control-label'> Prepend </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='prepend' id='prepend' value ='Parcourir' />
+                                           <label class='control-label'> Placeholder </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='placeholder' id='placeholder' value ='url' />
+                                           <label class='control-label'> Help Text </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='helptext' id='helptext' value ='.bmp, .png, .jpg. Ne peut exceder 3Mo' />
+                                           <label class=&quot;checkbox control-group&quot;>
+                                           <input type=&quot;checkbox&quot; data-type=&quot;checkbox&quot; class=&quot;input-inline field&quot; name=&quot;required&quot; id=&quot;required&quot;>
+                                           Required
+                                           </label>
+                                           <label class='control-label'> Input Size </label>
+                                           <select class=&quot;field&quot; data-type=&quot;select&quot; id='inputsize'>
+
+                                           <option value=&quot;input-mini&quot;  >Mini</option>
+
+                                           <option value=&quot;input-small&quot;  >Small</option>
+
+                                           <option value=&quot;input-medium&quot;  >Medium</option>
+
+                                           <option value=&quot;input-large&quot;  >Large</option>
+
+                                           <option value=&quot;input-xlarge&quot;  selected  >Xlarge</option>
+
+                                           <option value=&quot;input-xxlarge&quot;  >Xxlarge</option>
+
+                                           </select>
+
+                                           <hr/>
+                                           <button id=&quot;save&quot; class='btn btn-info'>Save</button><button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+                                           </div>
+                                           </form>
+                                           " data-title="Prepended Text" data-trigger="manual" data-html="true"><!-- Prepended text-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="image"></label>
+                                        <div class="controls">
+                                            <div class="input-prepend">
+                                                <span class="add-on">Parcourir</span>
+                                                <input id="image" name="image" class="input-xlarge" placeholder="url" type="text">
+                                            </div>
+                                            <p class="help-block">.bmp, .png, .jpg. Ne peut exceder 3Mo</p>
+                                        </div>
+                                    </div>
+                                </div><div class="component" data-content="<form class='form'>
+                                           <div class='controls'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           <label class='control-label'> Button 1 ID / Name </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='btnEnvoyer' />
+                                           <label class='control-label'> Label Text </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='' />
+                                           <label class='control-label'> Button Label </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='button1label' id='button1label' value ='Envoyer' />
+                                           <label class='control-label'> Button Type </label>
+                                           <select class=&quot;field&quot; data-type=&quot;select&quot; id='button1type'>
+
+                                           <option value=&quot;btn-default&quot;  >Default</option>
+
+                                           <option value=&quot;btn-primary&quot;  >Primary</option>
+
+                                           <option value=&quot;btn-info&quot;  selected  >Info</option>
+
+                                           <option value=&quot;btn-success&quot;  >Success</option>
+
+                                           <option value=&quot;btn-warning&quot;  >Warning</option>
+
+                                           <option value=&quot;btn-danger&quot;  >Danger</option>
+
+                                           <option value=&quot;btn-inverse&quot;  >Inverse</option>
+
+                                           </select>
+                                           <label class='control-label'> Button 2 ID / Name </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='id2' id='id2' value ='btnAnnuler' />
+                                           <label class='control-label'> Button Label </label>
+                                           <input class='input-large field' data-type=&quot;input&quot; type='text' name='button2label' id='button2label' value ='Annuler' />
+                                           <label class='control-label'> Button Type </label>
+                                           <select class=&quot;field&quot; data-type=&quot;select&quot; id='button2type'>
+
+                                           <option value=&quot;btn-default&quot;  >Default</option>
+
+                                           <option value=&quot;btn-primary&quot;  >Primary</option>
+
+                                           <option value=&quot;btn-info&quot;  >Info</option>
+
+                                           <option value=&quot;btn-success&quot;  >Success</option>
+
+                                           <option value=&quot;btn-warning&quot;  >Warning</option>
+
+                                           <option value=&quot;btn-danger&quot;  selected  >Danger</option>
+
+                                           <option value=&quot;btn-inverse&quot;  >Inverse</option>
+
+                                           </select>
+
+                                           <hr/>
+                                           <button id=&quot;save&quot; class='btn btn-info'>Save</button><button id=&quot;cancel&quot; class='btn btn-danger'>Cancel</button>
+                                           </div>
+                                           </form>
+                                           " data-title="Double Button" data-trigger="manual" data-html="true"><!-- Button (Double) -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="btnEnvoyer"></label>
+                                        <div class="controls">
+                                            <button id="btnEnvoyer" name="btnEnvoyer" class="btn btn-info">Envoyer</button>
+                                            <button id="btnAnnuler" name="btnAnnuler" class="btn btn-danger">Annuler</button>
+                                        </div>
+                                    </div>
+                                </div></fieldset>
+                        </div><!-- widget -->
+                    </div><!-- box-content-widget -->
+                </div><!-- row -->
+            </div><!-- end body-content -->
+
+            <div class="sidebar-content span3">
+                <div class="row">
+                    <div class="box-wrapper span3">
+                        <div class="row">
+                            <div class="title bg-title span3">
+                                <h3>Autres Articles</h3>
+                            </div>
+                        </div>
+                        <ul class="thumbnails thumbnails-horizontal">
+                            <li class="span3">
+                                <div class="thumbnail border-radius-top">
+                                    <div class="bg-thumbnail-img">
+                                        <a class="overlay" href="detail_vdc.html">
+                                            <img src="assets/img/icons/plus.png">
+                                        </a>
+                                        <img class="border-radius-top" src="assets/img/project/pj1.jpg">
+                                    </div>
+                                    <h5><a href="detail_vdc.html">Examen de Caml</a></h5>
+                                </div>
+                                <div class="box border-radius-bottom">
+                                    <p>
+                                        <span class="title_torrent pull-left">Examen de CamL</span>
+                                        <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>13</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail border-radius-top">
+                                    <div class="bg-thumbnail-img">
+                                        <a class="overlay" href="detail_vdc.html">
+                                            <img src="assets/img/icons/plus.png">
+                                        </a>
+                                        <img class="border-radius-top" src="assets/img/project/pj2.jpg">
+                                    </div>
+
+                                    <h5><a href="detail_vdc.html">Sujet de BADO</a></h5>
+                                </div>
+                                <div class="box border-radius-bottom">
+                                    <p>
+                                        <span class="title_torrent pull-left">Sujet de BADO</span>
+                                        <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>5</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail border-radius-top">
+                                    <div class="bg-thumbnail-img">
+                                        <a class="overlay" href="detail_vdc.html">
+                                            <img src="assets/img/icons/plus.png">
+                                        </a>
+                                        <img class="border-radius-top" src="assets/img/project/pj3.jpg">
+                                    </div>
+
+                                    <h5><a href="detail_vdc.html">Aide Java</a></h5>
+                                </div>
+                                <div class="box border-radius-bottom">
+                                    <p>
+                                        <span class="title_torrent pull-left">Aide Java</span>
+                                        <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>6</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail border-radius-top">
+                                    <div class="bg-thumbnail-img">
+                                        <a class="overlay" href="detail_vdc.html">
+                                            <img src="assets/img/icons/plus.png">
+                                        </a>
+                                        <img class="border-radius-top" src="assets/img/project/pj4.jpg">
+                                    </div>
+
+                                    <h5><a href="detail_vdc.html">Partage cours de Cisco</a></h5>
+                                </div>
+                                <div class="box border-radius-bottom">
+                                    <p>
+                                        <span class="title_torrent pull-left">Partage cours de Cisco</span>
+                                        <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>10</span>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="span3">
+                                <div class="thumbnail border-radius-top">
+                                    <div class="bg-thumbnail-img">
+                                        <a class="overlay" href="detail_vdc.html">
+                                            <img src="assets/img/icons/plus.png">
+                                        </a>
+                                        <img class="border-radius-top" src="assets/img/project/pj5.jpg">
+                                    </div>
+
+                                    <h5><a href="detail_vdc.html">Petit bonus CAR</a></h5>
+                                </div>
+                                <div class="box border-radius-bottom">
+                                    <p>
+                                        <span class="title_torrent pull-left">Petit bonus CAR</span>
+                                        <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>14</span>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="span3">
+                                <div class="thumbnail border-radius-top">
+                                    <div class="bg-thumbnail-img">
+                                        <a class="overlay" href="detail_vdc.html">
+                                            <img src="assets/img/icons/plus.png">
+                                        </a>
+                                        <img class="border-radius-top" src="assets/img/project/pj8.jpg">
+                                    </div>
+
+                                    <h5><a href="detail_vdc.html">Petit bonus CAR</a></h5>
+                                </div>
+                                <div class="box border-radius-bottom">
+                                    <p>
+                                        <span class="title_torrent pull-left">Projet Symphony CAIP</span>
+                                        <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>8</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- end thumbnails-style1 -->
+                </div><!-- row -->
+
+            </div><!-- end sidebar-content -->
+        </div><!-- row -->
+    </div><!-- end container -->
+
+
+</div>
+{% endblock %}
