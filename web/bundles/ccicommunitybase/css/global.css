@@ -255,10 +255,10 @@ border-color: #18191c;
 	color:#08C;
 }
 .navbar-fixed-top .nav .avatar_small a{
-	background:url("../img/logoccicaux_1.png") left 7px no-repeat;
-	height:20px;
-	width:10px;
-	margin-right:-15px;
+	background:url("../img/logocci&caux.png") left 6px no-repeat;
+	height:40px;
+	width:30px;
+	margin-right:-14px;
 }
 .navbar .nav li.dropdown .dropdown-toggle .caret, .navbar .nav li.dropdown.open .caret {
 border-top-color: #999;
@@ -634,6 +634,10 @@ border-bottom-color: #999;
 	width:670px;
 	min-height:200px;
 }
+
+.component{
+    padding-left:1%;
+}
 /*
 #widget-grid .span1,#widget-grid .span2,#widget-grid .span3,#widget-grid .span4,#widget-grid .span5,#widget-grid .span6,#widget-grid .span7,#widget-grid .span8,#widget-grid .span9,#widget-grid .span10,#widget-grid .span11,#widget-grid .span12
 {
@@ -941,7 +945,6 @@ code {
 .plan-container {
 	* margin:0px 0.4%;
 }
-
 
 
 
