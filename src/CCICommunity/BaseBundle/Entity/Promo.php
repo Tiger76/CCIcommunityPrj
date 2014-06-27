@@ -71,6 +71,7 @@ class Promo
         
    /**
     * * @ORM\OneToOne(targetEntity="CCICommunity\BaseBundle\Entity\Utilisateur", mappedBy="promochef")
+    *  @ORM\JoinColumn(name="resp_id", referencedColumnName="id")
     
     */
         private $admin;
