@@ -20,22 +20,9 @@
                         </div>
                         <div class="widget">
                             <form action="{{ path('cci_community_base_ajouter_vdc') }}" method="post" {{ form_enctype(form) }}>
-                            {{ form_widget(form._token)}}
-                            {% for champ in form %}
-                            <div>
-                              {# Génération du label. #}
-                              {% if form_label(champ) != form_label(form._token) %}
-                              {{ form_label(champ) }}
-                              {% endif %}
+                            {{ form_widget(form)}}
 
-                              {# Affichage des erreurs pour ce champ précis. #}
-                              {{ form_errors(champ) }}
-
-                              {# Génération de l'input. #}
-                              {{ form_widget(champ) }}
-                            </div>
-                            {% endfor %}
-
+                            <input type="submit" value="Ajouter"/>
                             </form>
                         </div><!-- widget -->
                     </div><!-- box-content-widget -->

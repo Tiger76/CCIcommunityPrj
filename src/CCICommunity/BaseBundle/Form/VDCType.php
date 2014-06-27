@@ -17,7 +17,6 @@ class VDCType extends AbstractType
         $builder
             ->add('titre')
             ->add('texte')
-            ->add('_token', 'hidden', array('label' => false))
             //->add('image')
             //->add('auteur')
             //->add('date')
