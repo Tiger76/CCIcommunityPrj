@@ -3,55 +3,48 @@
 {% block contenu %}
     <div class="main">
         <div class="container">
-            <div class="row">
-                <!--<div class="box-wrapper span12">
-                        <div class="widget">
-                                <div class="wrapper-search">
-                                        <form class="form-inline form-search border-rd4">
-                                                <input placeholder="Type somethings to search .." type="text" class="box-text">
-                                                <a href="#"class="btn-search"></a>
-                                        </form>
-                                </div>
-                        </div>
-                </div><!-- end box-wrapper -->
-            </div>
-            <!-- **************** start All Flie  ****************** -->
             <div class="box-wrapper ">
                 <div class="row">
                     <div class="title ">
                         <h3 class="pull-left">Vie de Classe</h3>
-                    </div><!-- end title -->
+                    </div>
+                </div>
+                <div class="row" style="padding-bottom:1%; padding-top:1%;">
+                    <div class="span10">
+                        <a href="{{path('cci_community_base_form_redaction',{'type':'vdc'})}}">
+                            <div class="btn-blue-s5" style="border-radius:5px; text-align:center; margin:0; padding:5px; font-family:Arial; font-size:1.1em;">Ajouter un Element</div>
+                        </a>
+                    </div>
                 </div>
                 <ul class="thumbnails thumbnails-vertical">
+                    
                     
                     <li class="span5">
                         <div class="thumbnail border-radius-top">
                             <div class="bg-thumbnail-img">
-                                <a style="display: none;" class="overlay" href="#" >
+                                <a style="display: none;" class="overlay">
                                     <img src="assets/img/icons/plus.png">
                                 </a>
-                                <img style="opacity: 1;" class="border-radius-top" src="#">
+                                <img style="opacity: 1;" class="border-radius-top" src="assets/img/project/pj1.jpg">
 
                             </div>
                             <div class="thumbnail-content-left">
-                                <h5><a href="#">Vive Houdoin</a></h5>
+                                <h4>Vive Houdoin</h4>
                                 <p>
+                                    <br>
                                     *Cravache party<br>
                                     *01/05/2014 23:30-05:00<br>
                                     ◈ 1 SHOOTER offerts aux 100 premiers arrivants !<br>
                                     ◈ 2 DJ'S:<br>
                                     Warm Up : Dj Bes (Résident) ...<br>
                                 </p>
-                                <h6><a href="{{ path('cci_community_base_vdc_detail', {'id': id})}}">[Read more]</a></h6>
                             </div>
                         </div>
-                        <!--<div class="box border-radius-bottom">
-                            <p>
-                                <span class="title_torrent pull-left">Evenement</span>
-                                <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>13</span>
-                            </p>
-                        </div>-->
+                        <div class="box border-radius-bottom">
+                            <h6><a href="{{ path('cci_community_base_vdc_detail', {'id': id}) }}">Lire le reste . . .</a></h6>
+                        </div>
                     </li>
+                    
                     
                 </ul>
                 <div class="navigation pagination pull-right">
