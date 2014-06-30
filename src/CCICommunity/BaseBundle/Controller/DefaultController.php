@@ -47,6 +47,16 @@ class DefaultController extends Controller
         return $this->render('CCICommunityBaseBundle:Default:vdc_detail.html.twig', array('vdc'=>$VDC));
     }
     
+     public function loginAction()
+    {
+         return $this->render('CCICommunityBaseBundle:Default:login.html.twig', array());
+    }
+    
+     public function profileAction()
+    {
+         return $this->render('CCICommunityBaseBundle:Default:profile.html.twig', array());
+    }
+    
     public function ajouter_vdcAction()
     {
         $vdc = new VDC;
@@ -64,9 +74,8 @@ class DefaultController extends Controller
               return $this->redirect($this->generateUrl('cci_community_base_vdc_list'));
             }
           }
-
-
-
         return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array('form' => $form->createView() ));
     }
 }
+
+

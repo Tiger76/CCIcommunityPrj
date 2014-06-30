@@ -1,0 +1,27 @@
+{% extends "::layout.html.twig" %}
+
+{% block contenu %}
+<div class="wrapper-login">
+	<div class="container">
+		<div class="row">
+			<div class="login-content span4 offset4">
+				<div class="header-login well">
+					<h3>Login</h3>
+				</div>
+				<form class="well">
+					<label>Username</label>
+					<input type="text" class="input" placeholder="Type something…">
+					<label>Password</label>
+					<input type="text" class="input" placeholder="Type something…">
+
+					<label class="checkbox">
+				    	<input type="checkbox"> Check me out
+					</label>
+				  	<a href="index.html" type="submit" class="btn btn-info">Submit</a>
+				  	<p class="sign-up-lg">Don't have an account? <a href="sign-up.html">Sign Up.</a></p>
+				</form>	
+			</div>
+		<div>
+	</div>
+</div>
+{% endblock %}
