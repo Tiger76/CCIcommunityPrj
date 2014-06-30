@@ -10,6 +10,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
+        
         return $this->render('CCICommunityBaseBundle:Default:index.html.twig', array());
     }
     
@@ -70,16 +71,8 @@ class DefaultController extends Controller
               return $this->redirect($this->generateUrl('cci_community_base_vdc_list'));
             }
           }
-          
-       
-          //return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array(
-            //'form' => $form,
-          //));
-
         return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array('form' => $form->createView() ));
     }
-    
-    
 }
 
 

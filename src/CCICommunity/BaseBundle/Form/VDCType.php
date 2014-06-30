@@ -17,10 +17,10 @@ class VDCType extends AbstractType
         $builder
             ->add('titre')
             ->add('texte')
-            //->add('image')
-            //->add('auteur')
-            //->add('date')
-            //->add('promo')
+            ->add('image')
+            ->add('auteur')
+            ->add('date')
+            ->add('promo')
         ;
     }
     

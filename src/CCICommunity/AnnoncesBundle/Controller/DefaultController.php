@@ -40,4 +40,9 @@ class DefaultController extends Controller
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array());
     }
+    
+    public function creerEvtAction()
+    {
+        
+    }
 }
