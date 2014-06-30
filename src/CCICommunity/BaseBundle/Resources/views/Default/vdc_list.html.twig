@@ -15,7 +15,11 @@
                 </div>
                 <div class="row" style="padding-bottom:1%; padding-top:1%;">
                     <div class="span10">
+<<<<<<< HEAD
                         <a href="{{path('cci_community_base_ajouter_vdc',{'type':'vdc'})}}">
+=======
+                        <a href="{{path('cci_community_base_ajouter_vdc',{})}}">
+>>>>>>> 556262218e563135821359022204d31c8524bba4
                             <div class="btn-blue-s5" style="border-radius:5px; text-align:center; margin:0; padding:5px; font-family:Arial; font-size:1.1em;">Ajouter un Element</div>
                         </a>
                     </div>
@@ -33,7 +37,7 @@
 
                             </div>
                             <div class="thumbnail-content-left">
-                                <h4>Vive Houdoin</h4>
+                                <h4>Vive Houdouin</h4>
                                 <p>
                                     <br>
                                     *Cravache party<br>
@@ -45,13 +49,14 @@
                             </div>
                         </div>
                         <div class="box border-radius-bottom">
-                            <h6><a href="{{ path('cci_community_base_vdc_detail', {'id': id}) }}">Lire le reste . . .</a></h6>
+                            <h6><a href="{{ path('cci_community_base_vdc_detail', {'id': 1}) }}">Lire le reste . . .</a></h6>
                         </div>
                     </li>
                     
                     
                 </ul>
-                <div class="navigation pagination pull-right">
+                {% include 'CCICommunityBaseBundle:Default:pagination.html.twig' %}
+                {#<div class="navigation pagination pull-right">
                     <ul>
                         <li><a href="#">←</a></li>
                         <li><a class="active" href="#">1</a></li>
@@ -59,7 +64,7 @@
                         <li><a href="#">3</a></li>
                         <li><a href="#">→</a></li>
                     </ul>
-                </div><!-- end navigation -->
+                </div><!-- end navigation -->#}
             </div><!-- end  -->
 
             <!-- **************** end All Flie  ****************** -->
