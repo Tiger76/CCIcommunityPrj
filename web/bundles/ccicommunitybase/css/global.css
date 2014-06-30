@@ -4,6 +4,10 @@ body {
 }
 
 /************ Custom **************/
+
+h6{
+    display: inline-block;
+}
 a,.brand .cl-blue{
 	color:#8dd1ff;
 }

@@ -13,22 +13,10 @@
             <div class="box-wrapper ">
                 <div class="row" style="padding-bottom:1%; padding-top:1%;">
                     <div class="span10">
-<<<<<<< HEAD
 
 
                         <a href="{{path('cci_community_base_ajouter_vdc',{})}}">
 
-=======
-<<<<<<< HEAD
-                        <a href="{{path('cci_community_base_ajouter_vdc')}}">
-=======
-<<<<<<< HEAD
-                        <a href="{{path('cci_community_base_ajouter_vdc',{'type':'vdc'})}}">
-=======
-                        <a href="{{path('cci_community_base_ajouter_vdc',{})}}">
->>>>>>> 556262218e563135821359022204d31c8524bba4
->>>>>>> 5fd38a2935e33708aae08e8a2fae79318a9cee65
->>>>>>> 878a37bba54da3f13e5331ab45d192ae4e7706b8
                             <div class="btn-blue-s5" style="border-radius:5px; text-align:center; margin:0; padding:5px; font-family:Arial; font-size:1.1em;">Ajouter un Element</div>
                         </a>
                     </div>
@@ -39,11 +27,11 @@
                     <li class="span5">
                         <div class="thumbnail border-radius-top">
                             <div class="bg-thumbnail-img">
-                                <a style="display: none;" class="overlay">
-                                    <img src="assets/img/icons/plus.png">
-                                </a>
+                                
                                 <img style="opacity: 1;" class="border-radius-top" src="{{ vdc.image }}">
-
+                                <a href="{{ path('cci_community_base_vdc_detail', {'id': vdc.id})}}" style="display: none;" class="overlay" >
+                                    <img src="/CCIcommunityPrj/web/bundles/ccicommunitybase/img/icons/plus.png">
+                                </a>
                             </div>
                             <div class="thumbnail-content-left">
                                 <h4>{{ vdc.titre }}</h4>
@@ -54,8 +42,14 @@
                             </div>
                         </div>
                         <div class="box border-radius-bottom">
-                            <h6><a href="{{ path('cci_community_base_vdc_detail', {'id': 1}) }}">Lire le reste . . .</a></h6>
+                        <h6><span><a href="{{ path('cci_community_base_vdc_detail', {'id': vdc.id})}}">Lire le reste . . .</a></span></h6>
+                        
+                            <span class="number-view pull-right">Auteur : {{ vdc.auteur }}</span>
+
                         </div>
+                        
+                        
+                        
                     </li>
                    
                     {% endfor %}

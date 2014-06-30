@@ -18,9 +18,9 @@ class DefaultController extends Controller
     {
 
       $request = $this->get('request');
-      $page = $request->request->get('page', 1);
+      $page = $request->get('page', 1);
 
-      $maxVDC = 5;
+      $maxVDC = 6;
         $listeVDC = $this->getDoctrine()->getManager()
                 ->getRepository("CCICommunityBaseBundle:VDC")
                 ->getList($page, $maxVDC);
@@ -41,7 +41,10 @@ class DefaultController extends Controller
     
     public function vdc_detailAction($id)
     {
-        return $this->render('CCICommunityBaseBundle:Default:vdc_detail.html.twig', array());
+        $VDC = $this->getDoctrine()->getManager()
+                ->getRepository("CCICommunityBaseBundle:VDC")
+                ->findOneById($id);
+        return $this->render('CCICommunityBaseBundle:Default:vdc_detail.html.twig', array('vdc'=>$VDC));
     }
     
     public function ajouter_vdcAction()
