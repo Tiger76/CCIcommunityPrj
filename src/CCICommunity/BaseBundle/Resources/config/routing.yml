@@ -25,3 +25,22 @@ cci_community_base_inscription:
 cci_community_base_homepage:
     pattern:  /
     defaults: { _controller: CCICommunityBaseBundle:Default:index }
+    
+
+cci_community_base_form_redaction:
+    pattern:  /
+    defaults: { _controller: CCICommunityBaseBundle:Default:form_redaction }
+    
+
+
+cci_community_base_profile:
+    pattern:  /profile
+    defaults: { _controller: CCICommunityBaseBundle:Default:profile}  
+
+
+    
+    
+    
+    
+  
+   
