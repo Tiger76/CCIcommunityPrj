@@ -1,0 +1,102 @@
+{% extends "::layout.html.twig" %}
+
+{% block contenu %}
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="box-wrapper span9">
+                    
+                    <div class="row">
+                        <div class="box-content-widget span9">
+                            <div class="row">
+                                <div class="title bg-title span9">
+                                    <p><h3>
+                                        <span class="title_torrent pull-left">Redaction d'une Adresse</span>
+                                        <span class="pull-right">05-05-2014</span>
+                                    </h3></p>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <form action="{{ path('cci_community_base_ajouter_adr') }}" method="post" {{ form_enctype(form) }}>
+                                {{ form_widget(form)}}
+
+                                <input type="submit" value="Ajouter"/>
+                                </form>
+                            </div><!-- widget -->
+                        </div><!-- box-content-widget -->
+                    </div><!-- row -->
+                    
+                </div><!-- end body-content -->
+
+                <div class="sidebar-content span3">
+
+                    <div class="row">
+                        <div class="box-wrapper span3">
+                            <div class="row">
+                                <div class="title bg-title span3">
+                                    <h3>Autres adresses</h3>
+                                </div>
+                            </div>
+                            <ul class="thumbnails thumbnails-horizontal">
+                                <li class="span3">
+                                    <div class="thumbnail border-radius-top">
+                                        <div class="bg-thumbnail-img">
+                                            <a class="overlay" href="detail.html">
+                                                <img src="assets/img/icons/plus.png">
+                                            </a>
+                                            <img class="border-radius-top" src="assets/img/project/pj1.jpg">
+                                        </div>
+                                        <h5><a href="detail.html">Le restaurant de la fille en rouge</a></h5>
+                                    </div>
+                                    <div class="box border-radius-bottom">
+                                        <p>
+                                            <span class="title_torrent pull-left">Restaurants</span>
+                                            <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail border-radius-top">
+                                        <div class="bg-thumbnail-img">
+                                            <a class="overlay" href="detail.html">
+                                                <img src="assets/img/icons/plus.png">
+                                            </a>
+                                            <img class="border-radius-top" src="assets/img/project/laser.jpg">
+                                        </div>
+
+                                        <h5><a href="detail.html">Laser game Montivilliers</a></h5>
+                                    </div>
+                                    <div class="box border-radius-bottom">
+                                        <p>
+                                            <span class="title_torrent pull-left">Divertissements</span>
+                                            <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail border-radius-top">
+                                        <div class="bg-thumbnail-img">
+                                            <a class="overlay" href="detail.html">
+                                                <img src="assets/img/icons/plus.png">
+                                            </a>
+                                            <img class="border-radius-top" src="assets/img/project/patinoire.jpg">
+                                        </div>
+
+                                        <h5><a href="detail.html">Patinoire le Havre</a></h5>
+                                    </div>
+                                    <div class="box border-radius-bottom">
+                                        <p>
+                                            <span class="title_torrent pull-left">Divertissements</span>
+                                            <span class="number-view pull-right"><i class="icon-white icon-eye-open"></i>1,444,898</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- end thumbnails-style1 -->
+                    </div><!-- row -->
+
+                </div><!-- end sidebar-content -->
+            </div><!-- row -->
+        </div><!-- end container -->
+    </div>
+{% endblock %}

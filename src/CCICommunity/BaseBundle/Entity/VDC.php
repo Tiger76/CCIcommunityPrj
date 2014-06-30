@@ -144,7 +144,7 @@ class VDC
      */
     public function setAuteur($newAuteur)
     {
-        $this->typeAuteur = $newAuteur;
+        $this->auteur = $newAuteur;
 
         return $this;
     }

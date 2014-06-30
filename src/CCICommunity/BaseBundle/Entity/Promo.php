@@ -28,7 +28,9 @@ class Promo
      */
     private $nomPromo;
 
-
+    public function __toString(){
+        return $this->nomPromo;
+    }
     /**
      * Get id
      *
