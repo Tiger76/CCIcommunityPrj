@@ -15,36 +15,31 @@
                 </div>
                 <div class="row" style="padding-bottom:1%; padding-top:1%;">
                     <div class="span10">
-<<<<<<< HEAD
-                        <a href="{{path('cci_community_base_ajouter_vdc',{'type':'vdc'})}}">
-=======
+
+
                         <a href="{{path('cci_community_base_ajouter_vdc',{})}}">
->>>>>>> 556262218e563135821359022204d31c8524bba4
+
                             <div class="btn-blue-s5" style="border-radius:5px; text-align:center; margin:0; padding:5px; font-family:Arial; font-size:1.1em;">Ajouter un Element</div>
                         </a>
                     </div>
                 </div>
                 <ul class="thumbnails thumbnails-vertical">
                     
-                    
+                    {% for vdc in listeVDC %}
                     <li class="span5">
                         <div class="thumbnail border-radius-top">
                             <div class="bg-thumbnail-img">
                                 <a style="display: none;" class="overlay">
                                     <img src="assets/img/icons/plus.png">
                                 </a>
-                                <img style="opacity: 1;" class="border-radius-top" src="assets/img/project/pj1.jpg">
+                                <img style="opacity: 1;" class="border-radius-top" src="{{ vdc.image }}">
 
                             </div>
                             <div class="thumbnail-content-left">
-                                <h4>Vive Houdouin</h4>
+                                <h4>{{ vdc.titre }}</h4>
                                 <p>
                                     <br>
-                                    *Cravache party<br>
-                                    *01/05/2014 23:30-05:00<br>
-                                    ◈ 1 SHOOTER offerts aux 100 premiers arrivants !<br>
-                                    ◈ 2 DJ'S:<br>
-                                    Warm Up : Dj Bes (Résident) ...<br>
+                                    {{ vdc.texte }}
                                 </p>
                             </div>
                         </div>
@@ -52,7 +47,8 @@
                             <h6><a href="{{ path('cci_community_base_vdc_detail', {'id': 1}) }}">Lire le reste . . .</a></h6>
                         </div>
                     </li>
-                    
+                   
+                    {% endfor %}
                     
                 </ul>
                 {% include 'CCICommunityBaseBundle:Default:pagination.html.twig' %}
