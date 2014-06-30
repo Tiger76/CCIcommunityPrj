@@ -28,4 +28,8 @@ class DefaultController extends Controller
         return $this->render('CCICommunityAnnoncesBundle:Default:petitesannonces_detail.html.twig', array());
     }*/
 
+    public function creerEvtAction()
+    {
+        
+    }
 }

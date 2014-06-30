@@ -10,13 +10,33 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
+        
         return $this->render('CCICommunityBaseBundle:Default:index.html.twig', array());
     }
     
     public function vdc_listAction()
     {
-        $id = 1;
-        return $this->render('CCICommunityBaseBundle:Default:vdc_list.html.twig', array('id' => $id ));
+
+      $request = $this->get('request');
+      $page = $request->request->get('page', 1);
+
+      $maxVDC = 5;
+        $listeVDC = $this->getDoctrine()->getManager()
+                ->getRepository("CCICommunityBaseBundle:VDC")
+                ->getList($page, $maxVDC);
+
+         $nbVDC = $this->getDoctrine()
+            ->getRepository('CCICommunityBaseBundle:VDC')
+            ->countTotalVDC();
+
+         $pagination = array(
+            'page' => $page,
+            'route' => 'cci_community_base_vdc_list',
+            'pages_count' => ceil($nbVDC / $maxVDC),
+            'route_params' => array()
+            );
+        
+        return $this->render('CCICommunityBaseBundle:Default:vdc_list.html.twig', array('pagination' => $pagination, 'listeVDC' => $listeVDC ));
     }
     
     public function vdc_detailAction($id)
@@ -28,7 +48,7 @@ class DefaultController extends Controller
     {
         $vdc = new VDC;
         $form = $this->createForm(new VDCType, $vdc);
-        
+
           $request = $this->get('request');
           if ($request->getMethod() == 'POST') {
             $form->bind($request);
@@ -42,9 +62,7 @@ class DefaultController extends Controller
             }
           }
 
-          //return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array(
-            //'form' => $form,
-          //));
+
 
         return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array('form' => $form->createView() ));
     }
