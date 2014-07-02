@@ -8,14 +8,40 @@ class DefaultController extends Controller
 {
     public function evenements_listAction()
     {
-        $id = 1;
-        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('id' => $id ));
+        //$id = 1;
+        //return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('id' => $id ));
+    
+        $request = $this->get('request');
+        $page = $request->get('page', 1);
+
+        $maxEvt = 6;
+        $listeEvt = $this->getDoctrine()->getManager()
+                ->getRepository("CCICommunityAnnoncesBundle:Evenement")
+                ->getList($page, $maxEvt);
+
+         $nbEvt = $this->getDoctrine()
+            ->getRepository('CCICommunityAnnoncesBundle:Evenement')
+            ->countTotalVDC();
+
+         $pagination = array(
+            'page' => $page,
+            'route' => 'cci_community_annonces_evenements_list',
+            'pages_count' => ceil($nbEvt / $maxEvt),
+            'route_params' => array()
+            );
+        
+        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('pagination' => $pagination, 'listeEvt' => $listeEvt ));
     }
     
-    // A revoir
+  
     public function evenements_detailAction($id)
     {
-        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array());
+        //return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array());
+    
+        $Evt = $this->getDoctrine()->getManager()
+                ->getRepository("CCICommunityAnnoncesBundle:Evenement")
+                ->findOneById($id);
+        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_detail.html.twig', array('evt'=>$Evt));
     }
     
     /*public function petitesannonces_listAction()

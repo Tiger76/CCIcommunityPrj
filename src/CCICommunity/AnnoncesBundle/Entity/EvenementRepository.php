@@ -3,6 +3,7 @@
 namespace CCICommunity\AnnoncesBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 
 /**
  * EvenementRepository
@@ -12,4 +13,22 @@ use Doctrine\ORM\EntityRepository;
  */
 class EvenementRepository extends EntityRepository
 {
+    
+       public function getList($page=1, $maxperpage=3)
+    {
+
+      $q = $this->createQueryBuilder('v');
+      $q->orderBy('v.date', 'DESC');
+	     
+	    $q->setFirstResult(($page-1) * $maxperpage)
+	    ->setMaxResults($maxperpage);
+	     
+	    return new Paginator($q);
+    }
+
+    public function countTotalVDC (){
+     $query = $this->createQueryBuilder('Evt')->select('COUNT(Evt)');
+     $total = $query->getQuery()->getSingleScalarResult();
+     return $total;
+    }
 }
