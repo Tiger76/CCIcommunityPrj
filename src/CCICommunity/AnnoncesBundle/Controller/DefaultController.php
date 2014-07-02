@@ -47,7 +47,22 @@ class DefaultController extends Controller
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:petitesannonces_detail.html.twig', array());
     }*/
-public function ajouter_evtAction()
+
+    
+    public function vdc_detailAction($id)
+    {
+        return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array());
+    }
+    public function ajouter_evenementAction()
+    {
+        return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array());
+    }
+    public function ajouter_adresseAction()
+    {
+        return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array());
+    }
+    
+    public function creer_evtAction()
     {
         $evt = new EVT;
         $form = $this->createForm(new EvenementType, $evt);

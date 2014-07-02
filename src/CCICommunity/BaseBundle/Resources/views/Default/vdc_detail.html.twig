@@ -11,25 +11,15 @@
                             <div class="row">
                                 <div class="title bg-title span9">
                                     <p></p><h3>
-                                        <span class="title_torrent pull-left">Examen OCaml</span>
-                                        <span class="pull-right">05-05-2014</span>
+                                        <span class="title_torrent pull-left">{{ vdc.titre }}</span>
+                                        <span class="pull-right">{{ vdc.date|date("d/m/Y") }}</span>
                                     </h3><p></p>
                                 </div>
                             </div>
                             <div class="widget">
                                 <div class="widget-content-pd">
-                                    <p class="ct-img"><a href="#"><img src="assets/img/img-blog4.jpg"></a></p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p class="ct-img"><a href="#"><img src="assets/img/img-blog2.jpg"></a></p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p class="ct-img"><a href="#"><img src="assets/img/img-blog3.jpg"></a></p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p class="ct-img"><a href="#"><img src="{{ vdc.image }}"></a></p>
+                                    <p>{{ vdc.texte }}</p>
 
                                     <div class="box-message">
                                         <div id="disqus_thread"></div>
