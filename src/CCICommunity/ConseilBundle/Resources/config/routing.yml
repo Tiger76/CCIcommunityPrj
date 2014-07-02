@@ -2,6 +2,10 @@ cci_community_conseil_adresses_detail:
     pattern:  /adresses/{id}
     defaults: { _controller: CCICommunityConseilBundle:Default:adresses_detail }
 
+cci_community_conseil_adresses_form:
+    pattern:  /adresses/form
+    defaults: { _controller: CCICommunityConseilBundle:Default:adresses_form }
+
 cci_community_conseil_adresses_list:
     pattern:  /adresses
     defaults: { _controller: CCICommunityConseilBundle:Default:adresses_list }

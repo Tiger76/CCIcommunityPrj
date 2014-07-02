@@ -4,35 +4,35 @@
     <div class="main">
         <div class="container">
             <div class="row">
-                    <div class="title span10">
-                        <h3 class="pull-left">Adresses</h3>
-                    </div><!-- end title -->
-                </div>
+                <div class="title span10">
+                    <h3 class="pull-left">Adresses</h3>
+                </div><!-- end title -->
+            </div>
             <div class="box-wrapper ">
                 <div class="row" style="padding-bottom:1%; padding-top:1%;">
                     <div class="span12">
-                        <a href="{{path('cci_community_base_ajouter_adr')}}">
+                        <a href="{{path('cci_community_conseil_adresses_form')}}">
                             <div class="btn-blue-s5" style="border-radius:5px; text-align:center; margin:0; padding:5px; font-family:Arial; font-size:1.1em;">Ajouter un Element</div>
                         </a>
                     </div>
                 </div>
                 <div class="box-content-widget ">
-                    
-                    <div class="widget">
-                        <div class="widget-content">
-                            <div class="title">
-                                <h3><a href="{{ path('cci_community_conseil_adresses_detail', {'id': id}) }}">Le Maque-Do</a></h3>
-                                <div class="desc">
-                                    Posted by: <a href="#">jane doe</a> | Posted on: 
-                                    <strong>April 6th, 2011</strong> | 
-                                    <a href="blog.html">12 Comments</a>
+                    {% for Adresses in listeAdresses %}
+                        <div class="widget">
+                            <div class="widget-content">
+                                <div class="title">
+                                    <h3><a href="{{ path('cci_community_conseil_adresses_detail', {'id': Adresses.id }) }}">{{ Adresses.titre }}</a></h3>
+                                    <div class="desc">
+                                        Posted by: {{ Adresses.auteur }} | Posted on: 
+                                        <strong>{{ vdc.date|date("d/m/Y") }}</strong> | 
+                                        <!--<a href="blog.html">12 Comments</a>-->
+                                    </div>
                                 </div>
+                                <p class="ct-img"><img src="assets/img/macdo.jpg"></a</p>
+                                <p>{{ Adresses.texte }}</p>
                             </div>
-                            <p class="ct-img"><a href="detail_adresse.html"><img src="assets/img/macdo.jpg"></a></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div><!-- widget -->
-                    
+                        </div><!-- widget -->
+                    {% endfor %}
                 </div><!-- box-content-widget -->
             </div>
         </div><!-- end container -->

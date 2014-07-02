@@ -13,7 +13,7 @@ use Doctrine\ORM\Tools\Pagination\Paginator;
  */
 class VDCRepository extends EntityRepository
 {
-	public function getList($page=1, $maxperpage=3)
+    public function getList($page=1, $maxperpage=3)
     {
 
       $q = $this->createQueryBuilder('v');
@@ -25,13 +25,10 @@ class VDCRepository extends EntityRepository
 	    return new Paginator($q);
     }
 
-    public function countTotalVDC (){
+    public function countTotalVDC ()
+    {
      $query = $this->createQueryBuilder('VDC')->select('COUNT(VDC)');
      $total = $query->getQuery()->getSingleScalarResult();
      return $total;
    }
-
-
-
-
 }
