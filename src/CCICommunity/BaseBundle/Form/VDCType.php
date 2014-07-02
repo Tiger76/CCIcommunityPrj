@@ -17,7 +17,7 @@ class VDCType extends AbstractType
         $builder
             ->add('titre')
             ->add('texte')
-            ->add('image')
+            ->add('file', 'file', array('label'  => 'Image'))
             ->add('auteur')
             ->add('date')
             ->add('promo')
