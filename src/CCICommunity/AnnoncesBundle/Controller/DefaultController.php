@@ -3,11 +3,14 @@
 namespace CCICommunity\AnnoncesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use CCICommunity\AnnoncesBundle\Entity\Evenement;
+use CCICommunity\AnnoncesBundle\Form\EvenementType;
 
 class DefaultController extends Controller
 {
     public function evenements_listAction()
     {
+<<<<<<< HEAD
         //$id = 1;
         //return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('id' => $id ));
     
@@ -31,6 +34,28 @@ class DefaultController extends Controller
             );
         
         return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('pagination' => $pagination, 'listeEvt' => $listeEvt ));
+=======
+        $request = $this->get('request');
+      $page = $request->request->get('page', 1);
+
+      $maxAdresses = 6;
+        $listeAdresses = $this->getDoctrine()->getManager()
+                ->getRepository("CCICommunityAnnoncesBundle:Evenement")
+                ->getList($page, $maxAdresses);
+
+         $nbAdresses = $this->getDoctrine()
+            ->getRepository('CCICommunityAnnoncesBundle:Evenement')
+            ->countTotalAdresses();
+
+         $pagination = array(
+            'page' => $page,
+            'route' => 'cci_community_annonces_evenement_list',
+            'pages_count' => ceil($nbEvenement / $maxEvenement),
+            'route_params' => array()
+            );
+        
+        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('pagination' => $pagination, 'listeAdresses' => $listeAdresses ));
+>>>>>>> 14f770156470f8da2ae6ba28c1d526100bf3699c
     }
     
   
@@ -53,22 +78,49 @@ class DefaultController extends Controller
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:petitesannonces_detail.html.twig', array());
     }*/
+
     
     public function vdc_detailAction($id)
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array());
     }
-    public function ajouter_EvenementAction()
+    public function ajouter_evenementAction()
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array());
     }
-    public function ajouter_AdresseAction()
+    public function ajouter_adresseAction()
     {
         return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array());
     }
     
-    public function creerEvtAction()
+    public function creer_evtAction()
     {
+        $evt = new EVT;
+        $form = $this->createForm(new EvenementType, $evt);
         
+          $request = $this->get('request');
+          if ($request->getMethod() == 'POST') {
+            $form->bind($request);
+
+            if ($form->isValid()) {
+              $em = $this->getDoctrine()->getManager();
+              $em->persist($evt);
+              $em->flush();
+
+              return $this->redirect($this->generateUrl('cci_community_annonces_evenement_list'));
+            }
+          }
+
+          //return $this->render('CCICommunityBaseBundle:Default:form_redaction.html.twig', array(
+            //'form' => $form,
+          //));
+
+        return $this->render('CCICommunityAnnoncesBundle:Default:form_redaction.html.twig', array('form' => $form->createView() ));
     }
+    
+  
+    
+    
+    
+
 }

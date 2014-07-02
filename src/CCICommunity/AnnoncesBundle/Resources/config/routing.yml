@@ -12,8 +12,8 @@ cci_community_annonces_evenements_detail:
 
 cci_community_annonces_evenements_list:
     pattern:  /evenements
-    defaults: { _controller: CCICommunityAnnoncesBundle:Default:evenements_list }
+    defaults: { _controller: CCICommunity:Default:evenements_list }
     
-cci_community_base_form_redaction:
-    pattern: /creerEvt
-    defaults: { _controller: CCICommunityAnnoncesBundle:Default:creerEvt }
+cci_community_annonces_ajouter_evt:
+    pattern:  /ajouter_evt
+    defaults: { _controller: CCICommunityAnnoncesBundle:Default:ajouter_evt }
