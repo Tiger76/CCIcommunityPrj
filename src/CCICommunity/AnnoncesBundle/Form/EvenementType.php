@@ -1,12 +1,12 @@
 <?php
 
-namespace CCICommunity\BaseBundle\Form;
+namespace CCICommunity\AnnoncesBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class VDCType extends AbstractType
+class EvenementType extends AbstractType
 {
         /**
      * @param FormBuilderInterface $builder
@@ -17,10 +17,10 @@ class VDCType extends AbstractType
         $builder
             ->add('titre')
             ->add('texte')
-            ->add('file', 'file', array('label'  => 'Image'))
+            ->add('image')
             ->add('auteur')
             ->add('date')
-            ->add('promo')
+            ->add('adresse')
         ;
     }
     
@@ -30,7 +30,7 @@ class VDCType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'CCICommunity\BaseBundle\Entity\VDC'
+            'data_class' => 'CCICommunity\AnnoncesBundle\Entity\Evenement'
         ));
     }
 
@@ -39,6 +39,6 @@ class VDCType extends AbstractType
      */
     public function getName()
     {
-        return 'ccicommunity_basebundle_vdc';
+        return 'ccicommunity_annoncesbundle_evenement';
     }
 }

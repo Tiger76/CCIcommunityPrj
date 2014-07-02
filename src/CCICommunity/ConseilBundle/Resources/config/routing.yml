@@ -9,6 +9,10 @@ cci_community_conseil_adresses_form:
 cci_community_conseil_adresses_list:
     pattern:  /adresses
     defaults: { _controller: CCICommunityConseilBundle:Default:adresses_list }
+
+cci_community_conseil_ajouter_adresses:
+    pattern:  /ajouter_adresses
+    defaults: { _controller: CCICommunityConseilBundle:Default:ajouter_adresses }
     
 cci_community_conseil_liensutiles_detail:
     pattern:  /liensutiles/{id}

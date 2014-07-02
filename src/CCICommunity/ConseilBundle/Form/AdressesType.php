@@ -1,12 +1,12 @@
 <?php
 
-namespace CCICommunity\BaseBundle\Form;
+namespace CCICommunity\ConseilBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class VDCType extends AbstractType
+class AdressesType extends AbstractType
 {
         /**
      * @param FormBuilderInterface $builder
@@ -17,10 +17,11 @@ class VDCType extends AbstractType
         $builder
             ->add('titre')
             ->add('texte')
-            ->add('file', 'file', array('label'  => 'Image'))
+            ->add('image')
             ->add('auteur')
             ->add('date')
-            ->add('promo')
+            ->add('note')
+            ->add('adresse')
         ;
     }
     
@@ -30,7 +31,7 @@ class VDCType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'CCICommunity\BaseBundle\Entity\VDC'
+            'data_class' => 'CCICommunity\ConseilBundle\Entity\Adresses'
         ));
     }
 
@@ -39,6 +40,6 @@ class VDCType extends AbstractType
      */
     public function getName()
     {
-        return 'ccicommunity_basebundle_vdc';
+        return 'ccicommunity_conseilbundle_adresses';
     }
 }

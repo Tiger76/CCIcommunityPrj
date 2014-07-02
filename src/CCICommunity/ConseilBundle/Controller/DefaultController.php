@@ -3,6 +3,8 @@
 namespace CCICommunity\ConseilBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use CCICommunity\ConseilBundle\Entity\Adresses;
+use CCICommunity\ConseilBundle\Form\AdressesType;
 
 class DefaultController extends Controller
 {

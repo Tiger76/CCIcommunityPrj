@@ -12,7 +12,8 @@ use Doctrine\ORM\Tools\Pagination\Paginator;
  */
 class AdressesRepository extends EntityRepository
 {
-    public function getList($page=1, $maxperpage=3)
+
+    public function getList($page=1, $maxperpage=6)
     {
 
       $q = $this->createQueryBuilder('v');
@@ -20,12 +21,12 @@ class AdressesRepository extends EntityRepository
 	     
 	    $q->setFirstResult(($page-1) * $maxperpage)
 	    ->setMaxResults($maxperpage);
-	     
 	    return new Paginator($q);
     }
 
     public function countTotalAdresses ()
     {
+
      $query = $this->createQueryBuilder('Adresses')->select('COUNT(Adresses)');
      $total = $query->getQuery()->getSingleScalarResult();
      return $total;
