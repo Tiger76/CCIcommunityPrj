@@ -10,7 +10,6 @@ class DefaultController extends Controller
 {
     public function evenements_listAction()
     {
-<<<<<<< HEAD
         //$id = 1;
         //return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('id' => $id ));
     
@@ -34,28 +33,7 @@ class DefaultController extends Controller
             );
         
         return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('pagination' => $pagination, 'listeEvt' => $listeEvt ));
-=======
-        $request = $this->get('request');
-      $page = $request->request->get('page', 1);
 
-      $maxAdresses = 6;
-        $listeAdresses = $this->getDoctrine()->getManager()
-                ->getRepository("CCICommunityAnnoncesBundle:Evenement")
-                ->getList($page, $maxAdresses);
-
-         $nbAdresses = $this->getDoctrine()
-            ->getRepository('CCICommunityAnnoncesBundle:Evenement')
-            ->countTotalAdresses();
-
-         $pagination = array(
-            'page' => $page,
-            'route' => 'cci_community_annonces_evenement_list',
-            'pages_count' => ceil($nbEvenement / $maxEvenement),
-            'route_params' => array()
-            );
-        
-        return $this->render('CCICommunityAnnoncesBundle:Default:evenement_list.html.twig', array('pagination' => $pagination, 'listeAdresses' => $listeAdresses ));
->>>>>>> 14f770156470f8da2ae6ba28c1d526100bf3699c
     }
     
   
